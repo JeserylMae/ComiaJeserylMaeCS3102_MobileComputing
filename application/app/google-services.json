@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "22807299010",
+    "firebase_url": "https://android-lab-52a67-default-rtdb.firebaseio.com",
+    "project_id": "android-lab-52a67",
+    "storage_bucket": "android-lab-52a67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22807299010:android:3647a35af98f51366c8c5b",
+        "android_client_info": {
+          "package_name": "com.example.androidLab"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI023C_JqLba5Td3p258vJHjxiPaUhksg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22807299010:android:a80e971680a492986c8c5b",
+        "android_client_info": {
+          "package_name": "com.example.exercise2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI023C_JqLba5Td3p258vJHjxiPaUhksg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22807299010:android:a0c1c765500b252a6c8c5b",
+        "android_client_info": {
+          "package_name": "com.example.exercise3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCI023C_JqLba5Td3p258vJHjxiPaUhksg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
