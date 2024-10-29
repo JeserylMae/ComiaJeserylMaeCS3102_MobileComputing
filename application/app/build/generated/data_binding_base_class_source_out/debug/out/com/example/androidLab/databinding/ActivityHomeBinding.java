@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -48,12 +49,16 @@ public final class ActivityHomeBinding implements ViewBinding {
   @NonNull
   public final ConstraintLayout main;
 
+  @NonNull
+  public final TextView textviewGreetingHolder;
+
   private ActivityHomeBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppCompatButton buttonBluetoothTransfer,
       @NonNull AppCompatButton buttonBluetoothWireless, @NonNull AppCompatButton buttonCountryFlag,
       @NonNull AppCompatButton buttonInfraredCommunication, @NonNull AppCompatButton buttonLogout,
       @NonNull AppCompatButton buttonOpenCalculator, @NonNull ImageButton buttonUserProfile,
-      @NonNull CardView cardViewShadowedContainer, @NonNull ConstraintLayout main) {
+      @NonNull CardView cardViewShadowedContainer, @NonNull ConstraintLayout main,
+      @NonNull TextView textviewGreetingHolder) {
     this.rootView = rootView;
     this.buttonBluetoothTransfer = buttonBluetoothTransfer;
     this.buttonBluetoothWireless = buttonBluetoothWireless;
@@ -64,6 +69,7 @@ public final class ActivityHomeBinding implements ViewBinding {
     this.buttonUserProfile = buttonUserProfile;
     this.cardViewShadowedContainer = cardViewShadowedContainer;
     this.main = main;
+    this.textviewGreetingHolder = textviewGreetingHolder;
   }
 
   @Override
@@ -143,9 +149,16 @@ public final class ActivityHomeBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.textview_greeting_holder;
+      TextView textviewGreetingHolder = ViewBindings.findChildViewById(rootView, id);
+      if (textviewGreetingHolder == null) {
+        break missingId;
+      }
+
       return new ActivityHomeBinding((ConstraintLayout) rootView, buttonBluetoothTransfer,
           buttonBluetoothWireless, buttonCountryFlag, buttonInfraredCommunication, buttonLogout,
-          buttonOpenCalculator, buttonUserProfile, cardViewShadowedContainer, main);
+          buttonOpenCalculator, buttonUserProfile, cardViewShadowedContainer, main,
+          textviewGreetingHolder);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -211,7 +211,35 @@
     <string name="text_female_rb">Female</string>
     <string name="text_gender_label">Gender</string>
     <string name="text_greeting_hello">Hello!</string>
+    <string name="text_greeting_hello_1">Hello,</string>
     <string name="text_greeting_welcome">Welcome to Android Lab!</string>
+    <string name="text_how_does_ir_communication_work">
+        Infrared LEDs produce light that’s not visible to the human eye. Typically, the wavelength
+        of light that such devices output is around 950 nanometers. However, IR LEDs aren’t the
+        only thing that can emit IR or near IR waves. Many other sources, like light bulbs and the
+        sun itself, release IR waves, which is one of the difficulties when dealing with IR
+        communications.
+        \n\n
+        Furthermore, anyone can send IR signals. Typically, no handshake, authentication, or
+        authorization takes place between the sender and the receiver. A TV, for example, can be
+        controlled by any remote that speaks the same language. In communications, language is
+        referred to as a protocol, which is nothing more than an agreement between the sender and
+        the recipient of the data. The two parties agree to follow a predefined pattern and
+        transmit the information in a certain way.
+        \n\n
+        The simplest method for transmitting binary values with an IR LED would be to turn the
+        infrared LED on (to send a logical 1) or to leave it turned off (which could represent a
+        logical 0) for a certain period. The sender could do this until all the data bits have been
+        transmitted. Unfortunately, this won’t work in reality since many other sources emit IR
+        radiation. The receiver would not be able to filter out unwanted signals from other sources.
+        \n\n
+        To overcome this issue, the sender is required to pulse the LED on and off very quickly,
+        instead of just turning it on and off. Typically, a frequency of 38,000 Hz is used, and
+        this is also referred to as the carrier frequency of the IR signal. Note that other
+        wavelengths and carrier frequencies are also possible — for example, 940 nm and 36 kHz.
+        However, in reality, that doesn’t seem to be a problem. Most IR receivers will still work
+        with slight variations in wavelength and carrier frequency.
+    </string>
     <string name="text_identifying_bluetooth">Identifying Bluetooth in Wireless Range</string>
     <string name="text_infrared_communication">Infrared Communication</string>
     <string name="text_interest_label">Interest</string>
@@ -228,7 +256,35 @@
     <string name="text_state_label">Province</string>
     <string name="text_state_select">Province</string>
     <string name="text_submit">Submit</string>
+    <string name="text_types_of_ir_communication">
+        <b>1. Point to Point:</b> It requires a line of sight between the transmitter and a
+        receiver. In other words the transmitter and the receiver should be pointed to each other
+        and there shouldn’t be any obstacles between them. Example is the remote control
+        communication.
+        \n
+        <b>2. Diffuse Point:</b> It doesn’t require any line of sight and the link between the
+        transmitter and the receiver is maintained by reflecting or bouncing of the transmitted
+        signal by surfaces like ceilings, roof, etc. Example is the wireless LAN communication
+        system.
+    </string>
+    <string name="text_what_is_ir_communication">
+        <b>Infrared</b> is a type of electromagnetic radiation that\'s longer in wavelength than
+        visible light but shorter than radio waves. It\'s commonly used in various technologies,
+        including remote controls, thermal imaging, and communication systems.
+        \n\n
+        <b>Infrared Wireless Communication</b> makes use of infrared waves in wireless technology
+        for digital data transfer.
+    </string>
     <string name="three">3</string>
+    <string name="title_how_does_ir_communication_work">
+        How does Infrared Communication Work?
+    </string>
+    <string name="title_types_of_ir_communication">
+        Two Types of Infrared Communication
+    </string>
+    <string name="title_what_is_ir_communication">
+        What is Infrared (IR)?
+    </string>
     <string name="top_line_with_rounded_corner">A pink line with rounded corners.</string>
     <string name="two">2</string>
     <string name="zero">0</string>

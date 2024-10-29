@@ -40,12 +40,13 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="70dp">
+            android:paddingBottom="80dp">
 
             <TextView
+                android:id="@+id/textview_greeting_holder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/text_greeting_welcome"
+                android:text="@string/text_greeting_hello_1"
                 android:fontFamily="@font/jua"
                 android:textAllCaps="false"
                 android:textSize="20sp"

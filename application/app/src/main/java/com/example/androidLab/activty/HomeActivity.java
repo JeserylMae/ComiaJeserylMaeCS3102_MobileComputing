@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,10 +14,17 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.androidLab.databinding.ActivityHomeBinding;
+import com.example.androidLab.models.RegistrationModel;
+import com.example.androidLab.viewModel.UserViewModel;
+
+import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
 
+    String userId;
+    RegistrationModel userInfo;
     ActivityHomeBinding binding;
+    UserViewModel userViewModel;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -32,6 +40,15 @@ public class HomeActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        userId        = getIntent().getStringExtra("userId");
+        userViewModel = new UserViewModel(this.getApplication());
+        userInfo      = userViewModel.getUserCredentials(userId);
+
+        Toast.makeText(this, "USER: "+userInfo.getUsername(), Toast.LENGTH_SHORT).show();
+
+        String greeting = String.valueOf(binding.textviewGreetingHolder.getText());
+        binding.textviewGreetingHolder.setText(String.format("%s %s!", greeting, userInfo.getUsername()));
 
         binding.buttonLogout.setOnTouchListener(this::onLogoutButtonClicked);
         binding.buttonOpenCalculator.setOnTouchListener(this::onOpenCalculatorClicked);

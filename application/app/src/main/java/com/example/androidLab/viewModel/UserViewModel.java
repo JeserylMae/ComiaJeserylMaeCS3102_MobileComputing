@@ -4,24 +4,19 @@ import android.app.Application;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
-import androidx.lifecycle.LiveData;
 
 import com.example.androidLab.models.RegistrationModel;
 import com.example.androidLab.repository.UserRepository;
-import com.google.firebase.auth.FirebaseUser;
 
 public class UserViewModel extends AndroidViewModel
 {
-    private LiveData<Boolean> userStatusLiveData;
+    private RegistrationModel userInfo;
     private final UserRepository userRepository;
-    private final LiveData<FirebaseUser> firebaseUserLiveData;
 
     public UserViewModel(@NonNull Application application)
     {
         super(application);
         userRepository = new UserRepository(application);
-        userStatusLiveData = userRepository.getFirebaseUserStatus();
-        firebaseUserLiveData = userRepository.getFirebaseUserMutableLiveData();
     }
 
     public void register(RegistrationModel user) {
@@ -36,11 +31,11 @@ public class UserViewModel extends AndroidViewModel
         userRepository.logout();
     }
 
-    public LiveData<FirebaseUser> getFirebaseUserLiveData() {
-        return firebaseUserLiveData;
+    public String getUid() {
+        return userRepository.getUid();
     }
 
-    public LiveData<Boolean> getUserStatusLiveData() {
-        return userStatusLiveData;
+    public RegistrationModel getUserCredentials(String userId) {
+        return userRepository.getUserCredentials(userId);
     }
 }

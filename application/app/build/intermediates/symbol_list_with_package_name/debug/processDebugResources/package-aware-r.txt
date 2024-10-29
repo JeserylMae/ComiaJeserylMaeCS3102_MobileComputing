@@ -3749,6 +3749,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textview_greeting_holder
 id time
 id title
 id titleDividerNoCustom
@@ -4240,7 +4241,9 @@ string text_email_label
 string text_female_rb
 string text_gender_label
 string text_greeting_hello
+string text_greeting_hello_1
 string text_greeting_welcome
+string text_how_does_ir_communication_work
 string text_identifying_bluetooth
 string text_infrared_communication
 string text_interest_label
@@ -4257,7 +4260,12 @@ string text_signin_underlined
 string text_state_label
 string text_state_select
 string text_submit
+string text_types_of_ir_communication
+string text_what_is_ir_communication
 string three
+string title_how_does_ir_communication_work
+string title_types_of_ir_communication
+string title_what_is_ir_communication
 string top_line_with_rounded_corner
 string two
 string zero

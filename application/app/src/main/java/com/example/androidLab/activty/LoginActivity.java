@@ -71,6 +71,7 @@ public class LoginActivity extends AppCompatActivity
 
         if (isLoggedIn) {
             Intent HomePage = new Intent(LoginActivity.this, HomeActivity.class);
+            HomePage.putExtra("userId", userViewModel.getUid());
             HomePage.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(HomePage);
         }
@@ -83,7 +84,6 @@ public class LoginActivity extends AppCompatActivity
         if (motion.getAction() != MotionEvent.ACTION_DOWN){
             return true;
         }
-
         displayMessage("Display only.");
 
         return false;
