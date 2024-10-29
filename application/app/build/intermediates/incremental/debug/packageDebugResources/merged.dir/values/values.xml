@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_region_barmm_dropdown">
+        <item>Basilan</item>
+        <item>Lanao del Sur</item>
+        <item>Maguindanao</item>
+        <item>Sulu</item>
+        <item>Tawi-tawi</item>
+    </string-array>
+    <string-array name="array_region_car_dropdown">
+        <item>Abra</item>
+        <item>Apayao</item>
+        <item>Ifugao</item>
+        <item>Benguet</item>
+        <item>Mountain Province</item>
+        <item>Kalinga</item>
+    </string-array>
+    <string-array name="array_region_dropdown">
+        <item>Region I - Ilocos Region</item>
+        <item>Region II - Cagayan Valley</item>
+        <item>Region III - Central Luzon</item>
+        <item>Region IV-A - CALABARZON</item>
+        <item>Region IV-B - MIMAROPA</item>
+        <item>Region V - Bicol Region</item>
+        <item>Region VI Western Visayas</item>
+        <item>Region VII Central Visayas</item>
+        <item>Region VIII Eastern Visayas</item>
+        <item>Region IX - Zamboanga Peninsula</item>
+        <item>Region X - Northern Mindanao</item>
+        <item>Region XI - Davao Region</item>
+        <item>Region XII - SOCCSKSARGEN</item>
+        <item>Region XIII - Caraga</item>
+        <item>NCR - National Capital Region</item>
+        <item>CAR - Cordillera Administrative Region</item>
+        <item>BARMM - Bangsamoro Autonomous Region in Muslim Mindanao</item>
+    </string-array>
+    <string-array name="array_region_i_dropdown">
+        <item>Ilocos Norte</item>
+        <item>Ilocos Sur</item>
+        <item>La Union</item>
+        <item>Pangasinan</item>
+    </string-array>
+    <string-array name="array_region_ii_dropdown">
+        <item>Batanes</item>
+        <item>Cagayan</item>
+        <item>Isabela</item>
+        <item>Quirino</item>
+        <item>Nueva Vizcaya</item>
+    </string-array>
+    <string-array name="array_region_iii_dropdown">
+        <item>Bataan</item>
+        <item>Bulacan</item>
+        <item>Aurora</item>
+        <item>Tarlac</item>
+        <item>Pampanga</item>
+        <item>Zambales</item>
+        <item>Nueva Ecija</item>
+    </string-array>
+    <string-array name="array_region_iv_a_dropdown">
+        <item>Batangas</item>
+        <item>Cavite</item>
+        <item>Laguna</item>
+        <item>Quezon</item>
+        <item>Manila</item>
+        <item>Bulacan</item>
+        <item>Cagayan De Oro</item>
+    </string-array>
+    <string-array name="array_region_iv_b_dropdown">
+        <item>Occidental Mindoro</item>
+        <item>Oriental Mindoro</item>
+        <item>Marinduque</item>
+        <item>Palawan</item>
+        <item>Romblon</item>
+    </string-array>
+    <string-array name="array_region_ix_dropdown">
+        <item>Zamboanga del Norte</item>
+        <item>Zamboanga del Sur</item>
+        <item>Zamboanga Sibugay</item>
+    </string-array>
+    <string-array name="array_region_ncr_dropdown">
+        <item>Manila</item>
+        <item>Quezon City</item>
+        <item>Makati</item>
+        <item>Las Pinas</item>
+        <item>Malabon</item>
+        <item>Muntinlupa</item>
+        <item>Mandaluyong</item>
+        <item>Marikina</item>
+        <item>Navotas</item>
+        <item>Pasay</item>
+        <item>Pasig</item>
+        <item>Paranaque</item>
+        <item>San Juan</item>
+        <item>Venezuela</item>
+        <item>Taguig</item>
+    </string-array>
+    <string-array name="array_region_v_dropdown">
+        <item>Albay</item>
+        <item>Camarines Norte</item>
+        <item>Camarines Sur</item>
+        <item>Catanduanes</item>
+        <item>Sorsogon</item>
+        <item>Masbate</item>
+    </string-array>
+    <string-array name="array_region_vi_dropdown">
+        <item>Aklan</item>
+        <item>Antique</item>
+        <item>Capiz</item>
+        <item>Guimaras</item>
+        <item>Iloilo</item>
+        <item>Negros Occidental</item>
+    </string-array>
+    <string-array name="array_region_vii_dropdown">
+        <item>Bohol</item>
+        <item>Cebu</item>
+        <item>Negros Oriental</item>
+        <item>Siquijor</item>
+    </string-array>
+    <string-array name="array_region_viii_dropdown">
+        <item>Biliran</item>
+        <item>Leyte</item>
+        <item>Eastern Samar</item>
+        <item>Northern Samar</item>
+        <item>Samar</item>
+        <item>Southern Leyte</item>
+    </string-array>
+    <string-array name="array_region_x_dropdown">
+        <item>Bukidnon</item>
+        <item>Camiguin</item>
+        <item>Lanao del Norte</item>
+        <item>Misamis Occidental</item>
+        <item>Misamis Oriental</item>
+    </string-array>
+    <string-array name="array_region_xi_dropdown">
+        <item>Davao de Oro</item>
+        <item>Davao de Norte</item>
+        <item>Davao Occidental</item>
+        <item>Davao Oriental</item>
+        <item>Davao del Sur</item>
+    </string-array>
+    <string-array name="array_region_xii_dropdown">
+        <item>Cotabato</item>
+        <item>South Cotabato</item>
+        <item>Sultan Kudarat</item>
+        <item>Sarangani</item>
+    </string-array>
+    <string-array name="array_region_xiii_dropdown">
+        <item>Agusan del Norte</item>
+        <item>Agusan del Sur</item>
+        <item>Dinagat Islands</item>
+        <item>Surigao del Sur</item>
+        <item>Surigao del Norte</item>
+    </string-array>
+    <color name="beige">#F5E9DD</color>
+    <color name="beige_transparent">#1AF5E9DD</color>
+    <color name="black">#FF000000</color>
+    <color name="dark_maroon">#98534E</color>
+    <color name="gradient_pink">#FFFF8982</color>
+    <color name="gray">#DFDCDC</color>
+    <color name="ic_launcher_background">#F5E9DD</color>
+    <color name="light_pink">#33E85D56</color>
+    <color name="maroon">#8D1F19</color>
+    <color name="pink">#E85D56</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="transparent_white">#05FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add">+</string>
+    <string name="app_name">Android Lab</string>
+    <string name="app_name_separated">Android \nLab</string>
+    <string name="calculator_sign">Calculator</string>
+    <string name="cd_backspace">Backspace</string>
+    <string name="cd_history">History</string>
+    <string name="cd_user_profile">View Profile</string>
+    <string name="clear_all">C</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="divide">÷</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="eight">8</string>
+    <string name="equal">=</string>
+    <string name="firebase_database_url" translatable="false">https://android-lab-52a67-default-rtdb.firebaseio.com</string>
+    <string name="five">5</string>
+    <string name="four">4</string>
+    <string name="gcm_defaultSenderId" translatable="false">22807299010</string>
+    <string name="google_api_key" translatable="false">AIzaSyCI023C_JqLba5Td3p258vJHjxiPaUhksg</string>
+    <string name="google_app_id" translatable="false">1:22807299010:android:3647a35af98f51366c8c5b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCI023C_JqLba5Td3p258vJHjxiPaUhksg</string>
+    <string name="google_storage_bucket" translatable="false">android-lab-52a67.appspot.com</string>
+    <string name="multiply">×</string>
+    <string name="nine">9</string>
+    <string name="one">1</string>
+    <string name="or">or</string>
+    <string name="parenthesis">( )</string>
+    <string name="percent">%</string>
+    <string name="pint">.</string>
+    <string name="project_id" translatable="false">android-lab-52a67</string>
+    <string name="seven">7</string>
+    <string name="sign_PN">±</string>
+    <string name="six">6</string>
+    <string name="subtract">-</string>
+    <string name="text_android_version_label">Android Lab ver 1.0.0</string>
+    <string name="text_birth_time_label">Birth Time</string>
+    <string name="text_birthdate_label">Birth Date</string>
+    <string name="text_bluetooth_file_transfer">Bluetooth File Transfer</string>
+    <string name="text_cancel_label">Cancel</string>
+    <string name="text_country_flag">Country\'s Flag Identifier</string>
+    <string name="text_country_label">Country</string>
+    <string name="text_country_select">Select Region</string>
+    <string name="text_country_value">Philippines</string>
+    <string name="text_dialog_alert_label">SUBMITTED INFORMATION</string>
+    <string name="text_email_label">Email Address</string>
+    <string name="text_female_rb">Female</string>
+    <string name="text_gender_label">Gender</string>
+    <string name="text_greeting_hello">Hello!</string>
+    <string name="text_greeting_hello_1">Hello,</string>
+    <string name="text_greeting_welcome">Welcome to Android Lab!</string>
+    <string name="text_how_does_ir_communication_work">
+        Infrared LEDs produce light that’s not visible to the human eye. Typically, the wavelength
+        of light that such devices output is around 950 nanometers. However, IR LEDs aren’t the
+        only thing that can emit IR or near IR waves. Many other sources, like light bulbs and the
+        sun itself, release IR waves, which is one of the difficulties when dealing with IR
+        communications.
+        \n\n
+        Furthermore, anyone can send IR signals. Typically, no handshake, authentication, or
+        authorization takes place between the sender and the receiver. A TV, for example, can be
+        controlled by any remote that speaks the same language. In communications, language is
+        referred to as a protocol, which is nothing more than an agreement between the sender and
+        the recipient of the data. The two parties agree to follow a predefined pattern and
+        transmit the information in a certain way.
+        \n\n
+        The simplest method for transmitting binary values with an IR LED would be to turn the
+        infrared LED on (to send a logical 1) or to leave it turned off (which could represent a
+        logical 0) for a certain period. The sender could do this until all the data bits have been
+        transmitted. Unfortunately, this won’t work in reality since many other sources emit IR
+        radiation. The receiver would not be able to filter out unwanted signals from other sources.
+        \n\n
+        To overcome this issue, the sender is required to pulse the LED on and off very quickly,
+        instead of just turning it on and off. Typically, a frequency of 38,000 Hz is used, and
+        this is also referred to as the carrier frequency of the IR signal. Note that other
+        wavelengths and carrier frequencies are also possible — for example, 940 nm and 36 kHz.
+        However, in reality, that doesn’t seem to be a problem. Most IR receivers will still work
+        with slight variations in wavelength and carrier frequency.
+    </string>
+    <string name="text_identifying_bluetooth">Identifying Bluetooth in Wireless Range</string>
+    <string name="text_infrared_communication">Infrared Communication</string>
+    <string name="text_interest_label">Interest</string>
+    <string name="text_login">Login</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_male_rb">Male</string>
+    <string name="text_name_label">Username</string>
+    <string name="text_owner_name">Created By: Jesay</string>
+    <string name="text_password_label">Password</string>
+    <string name="text_phone_number_label">Phone Number</string>
+    <string name="text_realtime_mc_services">Different Realtime Mobile Communicating Services</string>
+    <string name="text_register">Register</string>
+    <string name="text_signin_underlined"><u>Sign Up</u></string>
+    <string name="text_state_label">Province</string>
+    <string name="text_state_select">Province</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_types_of_ir_communication">
+        <b>1. Point to Point:</b> It requires a line of sight between the transmitter and a
+        receiver. In other words the transmitter and the receiver should be pointed to each other
+        and there shouldn’t be any obstacles between them. Example is the remote control
+        communication.
+        \n
+        <b>2. Diffuse Point:</b> It doesn’t require any line of sight and the link between the
+        transmitter and the receiver is maintained by reflecting or bouncing of the transmitted
+        signal by surfaces like ceilings, roof, etc. Example is the wireless LAN communication
+        system.
+    </string>
+    <string name="text_what_is_ir_communication">
+        <b>Infrared</b> is a type of electromagnetic radiation that\'s longer in wavelength than
+        visible light but shorter than radio waves. It\'s commonly used in various technologies,
+        including remote controls, thermal imaging, and communication systems.
+        \n\n
+        <b>Infrared Wireless Communication</b> makes use of infrared waves in wireless technology
+        for digital data transfer.
+    </string>
+    <string name="three">3</string>
+    <string name="title_how_does_ir_communication_work">
+        How does Infrared Communication Work?
+    </string>
+    <string name="title_types_of_ir_communication">
+        Two Types of Infrared Communication
+    </string>
+    <string name="title_what_is_ir_communication">
+        What is Infrared (IR)?
+    </string>
+    <string name="top_line_with_rounded_corner">A pink line with rounded corners.</string>
+    <string name="two">2</string>
+    <string name="zero">0</string>
+    <style name="Base.Theme.Exercise2" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="CustomDatePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/pink</item>
+        <item name="colorControlActivated">@color/pink</item>
+        <item name="android:selectableItemBackgroundBorderless">@color/beige</item>
+        <item name="colorControlHighlight">@color/pink</item>
+        <item name="android:windowBackground">@color/beige</item>
+        <item name="android:textColorSecondary">@color/maroon</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorPrimaryInverse">@color/beige</item>
+        <item name="android:textColorSecondaryInverse">@color/beige</item>
+
+
+    </style>
+    <style name="CustomTimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/maroon</item>
+        <item name="colorAccent">@color/pink</item>
+        <item name="android:windowBackground">@color/beige</item>
+        <item name="android:selectableItemBackgroundBorderless">@color/beige</item>
+    </style>
+    <style name="Theme.Exercise2" parent="Base.Theme.Exercise2"/>
+</resources>
