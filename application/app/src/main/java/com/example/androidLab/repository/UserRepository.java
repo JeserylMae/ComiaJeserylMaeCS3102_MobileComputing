@@ -19,7 +19,6 @@ import com.google.firebase.database.ValueEventListener;
 public class UserRepository
 {
     private final FirebaseAuth auth;
-    private RegistrationModel userInfo;
     private final Application application;
 
 
@@ -59,7 +58,7 @@ public class UserRepository
         return auth.getCurrentUser().getUid();
     }
 
-    public RegistrationModel getUserCredentials(String userId)
+    public void getUserCredentials(String userId)
     {
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("users");
 
@@ -68,6 +67,7 @@ public class UserRepository
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (!snapshot.exists()) return;
 
+                RegistrationModel userInfo = new RegistrationModel();
                 userInfo.setGender(snapshot.child("gender").getValue(String.class));
                 userInfo.setRegion(snapshot.child("region").getValue(String.class));
                 userInfo.setCountry(snapshot.child("country").getValue(String.class));
@@ -86,8 +86,6 @@ public class UserRepository
                 Toast.makeText(application, "Error parsing user.", Toast.LENGTH_SHORT).show();
             }
         });
-
-        return userInfo;
     }
 
     // Helper methods
