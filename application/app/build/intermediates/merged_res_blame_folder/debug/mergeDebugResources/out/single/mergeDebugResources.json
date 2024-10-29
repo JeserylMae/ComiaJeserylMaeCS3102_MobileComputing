@@ -20,16 +20,16 @@
         "source": "com.example.androidLab.app-main-42:/layout/activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_main.xml"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\font_noto_sans_kr_bold.ttf.flat",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\font\\noto_sans_kr_bold.ttf"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_vector_user.xml.flat",
@@ -52,6 +52,10 @@
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_image_math_clipart.png"
     },
     {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_image_flag.png.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_image_flag.png"
+    },
+    {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\layout_activity_calculator.xml.flat",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_calculator.xml"
     },
@@ -70,6 +74,10 @@
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\layout_activity_register.xml.flat",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_image_bluetooth_transfer.png.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_image_bluetooth_transfer.png"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -108,6 +116,10 @@
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_ripple_solid_maroon.xml"
     },
     {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_image_country_flag.png.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_image_country_flag.png"
+    },
+    {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_background_outlined_pink.xml.flat",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_background_outlined_pink.xml"
     },
@@ -144,16 +156,20 @@
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_background_outlined_beige_parallel_corner.xml"
     },
     {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_vector_logout.xml.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_vector_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_ripple_solid_dark_maroon.xml.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_ripple_solid_dark_maroon.xml"
+    },
+    {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_image_animated_robot.gif.flat",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_image_animated_robot.gif"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_ripple_transparent.xml.flat",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_ripple_transparent.xml"
-    },
-    {
-        "merged": "com.example.androidLab.app-debug-40:/drawable_ic_vector_logout.xml.flat",
-        "source": "com.example.androidLab.app-main-42:/drawable/ic_vector_logout.xml"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_ripple_outlined_pink.xml.flat",
@@ -166,6 +182,10 @@
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_image_infrared_communication.png.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_image_infrared_communication.png"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_launcher_foreground.xml.flat",
@@ -190,6 +210,10 @@
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\mipmap-xxxhdpi_ic_launcher_robot.webp.flat",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\mipmap-xxxhdpi\\ic_launcher_robot.webp"
+    },
+    {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\drawable_ic_image_file_transfer.png.flat",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\drawable\\ic_image_file_transfer.png"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-debug-40:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",

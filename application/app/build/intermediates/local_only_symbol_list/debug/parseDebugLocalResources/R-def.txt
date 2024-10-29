@@ -21,6 +21,7 @@ array array_region_xiii_dropdown
 color beige
 color beige_transparent
 color black
+color dark_maroon
 color gradient_pink
 color gray
 color ic_launcher_background
@@ -40,10 +41,15 @@ drawable ic_background_solid_beige_slim
 drawable ic_background_solid_maroon
 drawable ic_background_solid_pink
 drawable ic_image_animated_robot
+drawable ic_image_bluetooth_transfer
+drawable ic_image_country_flag
+drawable ic_image_file_transfer
+drawable ic_image_infrared_communication
 drawable ic_image_math_clipart
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_ripple_outlined_pink
+drawable ic_ripple_solid_dark_maroon
 drawable ic_ripple_solid_maroon
 drawable ic_ripple_solid_pink
 drawable ic_ripple_transparent
@@ -60,9 +66,12 @@ font noto_sans_kr_bold
 font noto_sans_kr_thin
 id button_add
 id button_backspace
+id button_bluetooth_transfer
+id button_bluetooth_wireless
 id button_cancel_submit
 id button_clear_all
 id button_confirm_submit
+id button_country_flag
 id button_divide
 id button_eight
 id button_equal
@@ -70,6 +79,7 @@ id button_five
 id button_four
 id button_goto_signup
 id button_history
+id button_infrared_communication
 id button_login
 id button_login_with_google
 id button_logout
@@ -147,6 +157,7 @@ string app_name_separated
 string calculator_sign
 string cd_backspace
 string cd_history
+string cd_user_profile
 string clear_all
 string continue_with_google
 string divide
@@ -176,7 +187,9 @@ string subtract
 string text_android_version_label
 string text_birth_time_label
 string text_birthdate_label
+string text_bluetooth_file_transfer
 string text_cancel_label
+string text_country_flag
 string text_country_label
 string text_country_select
 string text_country_value
@@ -186,6 +199,8 @@ string text_female_rb
 string text_gender_label
 string text_greeting_hello
 string text_greeting_welcome
+string text_identifying_bluetooth
+string text_infrared_communication
 string text_interest_label
 string text_login
 string text_logout
@@ -194,6 +209,7 @@ string text_name_label
 string text_owner_name
 string text_password_label
 string text_phone_number_label
+string text_realtime_mc_services
 string text_register
 string text_signin_underlined
 string text_state_label

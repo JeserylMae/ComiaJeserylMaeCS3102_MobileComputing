@@ -154,6 +154,7 @@
     <color name="beige">#F5E9DD</color>
     <color name="beige_transparent">#1AF5E9DD</color>
     <color name="black">#FF000000</color>
+    <color name="dark_maroon">#98534E</color>
     <color name="gradient_pink">#FFFF8982</color>
     <color name="gray">#DFDCDC</color>
     <color name="ic_launcher_background">#F5E9DD</color>
@@ -169,6 +170,7 @@
     <string name="calculator_sign">Calculator</string>
     <string name="cd_backspace">Backspace</string>
     <string name="cd_history">History</string>
+    <string name="cd_user_profile">View Profile</string>
     <string name="clear_all">C</string>
     <string name="continue_with_google">Continue with Google</string>
     <string name="divide">÷</string>
@@ -198,7 +200,9 @@
     <string name="text_android_version_label">Android Lab ver 1.0.0</string>
     <string name="text_birth_time_label">Birth Time</string>
     <string name="text_birthdate_label">Birth Date</string>
+    <string name="text_bluetooth_file_transfer">Bluetooth File Transfer</string>
     <string name="text_cancel_label">Cancel</string>
+    <string name="text_country_flag">Country\'s Flag Identifier</string>
     <string name="text_country_label">Country</string>
     <string name="text_country_select">Select Region</string>
     <string name="text_country_value">Philippines</string>
@@ -208,6 +212,8 @@
     <string name="text_gender_label">Gender</string>
     <string name="text_greeting_hello">Hello!</string>
     <string name="text_greeting_welcome">Welcome to Android Lab!</string>
+    <string name="text_identifying_bluetooth">Identifying Bluetooth in Wireless Range</string>
+    <string name="text_infrared_communication">Infrared Communication</string>
     <string name="text_interest_label">Interest</string>
     <string name="text_login">Login</string>
     <string name="text_logout">Logout</string>
@@ -216,6 +222,7 @@
     <string name="text_owner_name">Created By: Jesay</string>
     <string name="text_password_label">Password</string>
     <string name="text_phone_number_label">Phone Number</string>
+    <string name="text_realtime_mc_services">Different Realtime Mobile Communicating Services</string>
     <string name="text_register">Register</string>
     <string name="text_signin_underlined"><u>Sign Up</u></string>
     <string name="text_state_label">Province</string>

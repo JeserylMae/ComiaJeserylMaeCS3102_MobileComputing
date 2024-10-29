@@ -31,6 +31,12 @@
     <string name="text_signin_underlined"><u>Sign Up</u></string>
     <string name="continue_with_google">Continue with Google</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="cd_user_profile">View Profile</string>
+    <string name="text_infrared_communication">Infrared Communication</string>
+    <string name="text_bluetooth_file_transfer">Bluetooth File Transfer</string>
+    <string name="text_identifying_bluetooth">Identifying Bluetooth in Wireless Range</string>
+    <string name="text_country_flag">Country\'s Flag Identifier</string>
+    <string name="text_realtime_mc_services">Different Realtime Mobile Communicating Services</string>
 
     <string name="calculator_sign">Calculator</string>
     <string name="zero">0</string>

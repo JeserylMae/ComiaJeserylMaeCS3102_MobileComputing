@@ -1420,6 +1420,7 @@ int color common_google_signin_btn_text_light_disabled 0x7f06003d
 int color common_google_signin_btn_text_light_focused 0x7f06003e
 int color common_google_signin_btn_text_light_pressed 0x7f06003f
 int color common_google_signin_btn_tint 0x7f060040
+int color dark_maroon 0x7f060320
 int color design_bottom_navigation_shadow_color 0x7f060041
 int color design_box_stroke_color 0x7f060042
 int color design_dark_default_color_background 0x7f060043
@@ -3094,6 +3095,10 @@ int drawable ic_call_decline_low 0x7f0800ab
 int drawable ic_clear_black_24 0x7f0800ac
 int drawable ic_clock_black_24dp 0x7f0800ad
 int drawable ic_image_animated_robot 0x7f0800ae
+int drawable ic_image_bluetooth_transfer 0x7f080115
+int drawable ic_image_country_flag 0x7f08011a
+int drawable ic_image_file_transfer 0x7f080116
+int drawable ic_image_infrared_communication 0x7f080118
 int drawable ic_image_math_clipart 0x7f0800af
 int drawable ic_keyboard_black_24dp 0x7f0800b0
 int drawable ic_launcher_background 0x7f0800b1
@@ -3109,6 +3114,7 @@ int drawable ic_other_sign_in 0x7f0800ba
 int drawable ic_passkey 0x7f0800bb
 int drawable ic_password 0x7f0800bc
 int drawable ic_ripple_outlined_pink 0x7f0800bd
+int drawable ic_ripple_solid_dark_maroon 0x7f080119
 int drawable ic_ripple_solid_maroon 0x7f0800be
 int drawable ic_ripple_solid_pink 0x7f0800bf
 int drawable ic_ripple_transparent 0x7f0800c0
@@ -3308,9 +3314,12 @@ int id browser_actions_menu_view 0x7f0a0068
 int id buttonPanel 0x7f0a0069
 int id button_add 0x7f0a006a
 int id button_backspace 0x7f0a006b
+int id button_bluetooth_transfer 0x7f0a0246
+int id button_bluetooth_wireless 0x7f0a0247
 int id button_cancel_submit 0x7f0a006c
 int id button_clear_all 0x7f0a006d
 int id button_confirm_submit 0x7f0a006e
+int id button_country_flag 0x7f0a0248
 int id button_divide 0x7f0a006f
 int id button_eight 0x7f0a0070
 int id button_equal 0x7f0a0071
@@ -3318,6 +3327,7 @@ int id button_five 0x7f0a0072
 int id button_four 0x7f0a0073
 int id button_goto_signup 0x7f0a0074
 int id button_history 0x7f0a0075
+int id button_infrared_communication 0x7f0a0249
 int id button_login 0x7f0a0076
 int id button_login_with_google 0x7f0a0077
 int id button_logout 0x7f0a0245
@@ -4042,6 +4052,7 @@ int string call_notification_ongoing_text 0x7f12002e
 int string call_notification_screening_text 0x7f12002f
 int string cd_backspace 0x7f120030
 int string cd_history 0x7f120031
+int string cd_user_profile 0x7f1200fc
 int string character_counter_content_description 0x7f120032
 int string character_counter_overflowed_content_description 0x7f120033
 int string character_counter_pattern 0x7f120034
@@ -4217,7 +4228,9 @@ int string subtract 0x7f1200dd
 int string text_android_version_label 0x7f1200de
 int string text_birth_time_label 0x7f1200df
 int string text_birthdate_label 0x7f1200e0
+int string text_bluetooth_file_transfer 0x7f1200fd
 int string text_cancel_label 0x7f1200e1
+int string text_country_flag 0x7f1200fe
 int string text_country_label 0x7f1200e2
 int string text_country_select 0x7f1200e3
 int string text_country_value 0x7f1200e4
@@ -4227,6 +4240,8 @@ int string text_female_rb 0x7f1200e7
 int string text_gender_label 0x7f1200e8
 int string text_greeting_hello 0x7f1200e9
 int string text_greeting_welcome 0x7f1200ea
+int string text_identifying_bluetooth 0x7f1200ff
+int string text_infrared_communication 0x7f120100
 int string text_interest_label 0x7f1200eb
 int string text_login 0x7f1200ec
 int string text_logout 0x7f1200fb
@@ -4235,6 +4250,7 @@ int string text_name_label 0x7f1200ee
 int string text_owner_name 0x7f1200ef
 int string text_password_label 0x7f1200f0
 int string text_phone_number_label 0x7f1200f1
+int string text_realtime_mc_services 0x7f120101
 int string text_register 0x7f1200f2
 int string text_signin_underlined 0x7f1200f3
 int string text_state_label 0x7f1200f4
