@@ -43,6 +43,7 @@
     <string name="text_courses">Courses</string>
     <string name="cd_back_button">Back</string>
     <string name="text_difficulty_easy">Difficulty: Easy</string>
+    <string name="title_summary">Summary</string>
 
 
     <string name="calculator_sign">Calculator</string>
@@ -297,6 +298,37 @@
         However, in reality, that doesn’t seem to be a problem. Most IR receivers will still work
         with slight variations in wavelength and carrier frequency.
     </string>
+
+    <string name="title_ir_communication_advantages">
+        Advantages of IR communication
+    </string>
+    <string name="text_ir_communication_advantage">
+        <b>1. Security:</b> Infrared communication has high directionality and can identify the
+        source as different sources emit radiation of different frequencies and thus the risk of
+        information being diffused is eliminated.
+        \n\n
+        <b>2. Safety:</b> Infrared radiation is not harmful to human beings. Hence infrared
+        communication can be used at any place.
+        \n\n
+        <b>3. High Speed data Communication: </b> The data rate of Infrared communication is about
+        1Gbps and can be used for sending information like video signal.
+    </string>
+
+    <string name="text_ir_communication_summary">
+        Using IR LEDs and receivers for data transmission is a straightforward way of communicating
+        wirelessly. The low transmission speeds of popular IR transmission protocols make this
+        method easy to implement, even when using slow microcontrollers. The sender has to pulse
+        the LED on and off to transmit data because many other objects emit IR radiation.
+        Otherwise, the receiver wouldn’t be able to differentiate between actual messages and noise.
+
+        The NEC protocol uses pulse distance encoding to distinguish between logic states in
+        transmitted messages. The message itself consists of a synchronization sequence, typically
+        followed by an eight-bit address and command. The RC5 protocol uses Manchester encoding to
+        differentiate the logic states. The message itself contains two starting bits, a toggle bit,
+        five address bits, and six data bits. Both systems support repeat sequences that tell the
+        receiver to repeat the last command.
+    </string>
+
 
 
 </resources>
