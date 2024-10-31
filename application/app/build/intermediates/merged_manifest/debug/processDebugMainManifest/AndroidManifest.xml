@@ -33,6 +33,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Exercise2" >
         <activity
+            android:name="com.example.androidLab.InfraredCommunicationActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.androidLab.activty.HomeActivity"
             android:exported="false" />
         <activity

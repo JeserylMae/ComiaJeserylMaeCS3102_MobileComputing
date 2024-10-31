@@ -6,6 +6,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 
 import com.example.androidLab.models.RegistrationModel;
+import com.example.androidLab.models.onTaskCompleteListener;
 import com.example.androidLab.models.onUserDataFetchedListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -22,7 +23,6 @@ public class UserRepository
     private final FirebaseAuth auth;
     private final Application application;
 
-
     public UserRepository(Application application) {
         this.application = application;
         auth = FirebaseAuth.getInstance();
@@ -36,11 +36,9 @@ public class UserRepository
             ).addOnCompleteListener(task -> onRegisterComplete(task, user));
     }
 
-    public boolean login(String email, String password) {
+    public void login(String email, String password, onTaskCompleteListener taskComplete) {
         auth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener(task -> {});
-
-        return auth.getCurrentUser() != null;
+            .addOnCompleteListener(task -> {taskComplete.onTaskComplete(task.isSuccessful());});
     }
 
     public void logout() {

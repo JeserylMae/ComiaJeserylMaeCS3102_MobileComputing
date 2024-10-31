@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:1-42:12
 MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\jesay\.gradle\caches\transforms-4\9e90a447e2c3a7010c6c1ace1e7686e7\transformed\viewbinding-8.5.2\AndroidManifest.xml:2:1-7:12
 MERGED from [pl.droidsonroids.gif:android-gif-drawable:1.2.25] C:\Users\jesay\.gradle\caches\transforms-4\4f5b47568266dcb6d5511073f3017c74\transformed\android-gif-drawable-1.2.25\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\jesay\.gradle\caches\transforms-4\e1c747a5643087477ba4bbc55f338e48\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
@@ -82,8 +82,8 @@ MERGED from [com.google.android.libraries.identity.googleid:googleid:1.1.0] C:\U
 	xmlns:android
 		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:6:5-37:19
-INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:6:5-37:19
+ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:6:5-40:19
+INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:6:5-40:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\jesay\.gradle\caches\transforms-4\e1c747a5643087477ba4bbc55f338e48\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\jesay\.gradle\caches\transforms-4\e1c747a5643087477ba4bbc55f338e48\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\jesay\.gradle\caches\transforms-4\d1b8014c11b7e7fb9a32fc31c481567f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -148,46 +148,52 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\je
 		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:14:9-47
 	android:dataExtractionRules
 		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:8:9-65
-activity#com.example.androidLab.activty.HomeActivity
+activity#com.example.androidLab.InfraredCommunicationActivity
 ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:17:13-49
-activity#com.example.androidLab.activty.CalculatorActivity
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:17:13-58
+activity#com.example.androidLab.activty.HomeActivity
 ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:19:9-21:40
 	android:exported
 		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:21:13-37
 	android:name
-		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:20:13-55
-activity#com.example.androidLab.activty.LoginActivity
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:20:13-49
+activity#com.example.androidLab.activty.CalculatorActivity
 ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:22:9-24:40
 	android:exported
 		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:24:13-37
 	android:name
-		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:23:13-50
-activity#com.example.androidLab.activty.RegisterActivity
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:23:13-55
+activity#com.example.androidLab.activty.LoginActivity
 ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
 		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:26:13-53
-activity#com.example.androidLab.activty.MainActivity
-ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:28:9-36:20
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:26:13-50
+activity#com.example.androidLab.activty.RegisterActivity
+ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:28:9-30:40
 	android:exported
-		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:29:13-49
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:29:13-53
+activity#com.example.androidLab.activty.MainActivity
+ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:31:9-39:20
+	android:exported
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:33:13-36
+	android:name
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:32:13-49
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:31:13-35:29
+ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:34:13-38:29
 action#android.intent.action.MAIN
-ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:35:17-69
 	android:name
-		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:35:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:34:17-77
+ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:34:27-74
+		ADDED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml:37:27-74
 uses-sdk
 INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\src\main\AndroidManifest.xml

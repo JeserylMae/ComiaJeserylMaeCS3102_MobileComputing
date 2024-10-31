@@ -49,8 +49,7 @@ public class LoginActivity extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         super.onBackPressed();
         Intent intent = new Intent(this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -62,16 +61,6 @@ public class LoginActivity extends AppCompatActivity
             return true;
         }
 
-        if (!loginWithEmailAndPass()) {
-            Toast.makeText(this,"Login Error! \nEnsure all information are correct",
-                Toast.LENGTH_SHORT).show();
-            return true;
-        }
-        getUserCredentials();
-        return false;
-    }
-
-    private boolean loginWithEmailAndPass() {
         String email, password;
         password = binding.editTextPassword.getText().toString();
         email = binding.editTextEmailAddress.getText().toString();
@@ -80,7 +69,18 @@ public class LoginActivity extends AppCompatActivity
             displayMessage("Login failed! Some fields are empty!");
             return false;
         }
-        return userRepository.login(email, password);
+        userRepository.login(email, password, this::onLoginComplete);
+
+        return false;
+    }
+
+    private void onLoginComplete(Boolean isSuccessful) {
+        if (!isSuccessful) {
+            Toast.makeText(this,"Login Error! \nEnsure all information are correct",
+                    Toast.LENGTH_SHORT).show();
+            return;
+        }
+        getUserCredentials();
     }
 
     private void getUserCredentials() {

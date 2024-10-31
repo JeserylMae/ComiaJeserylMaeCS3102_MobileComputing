@@ -3099,8 +3099,12 @@ drawable ic_image_animated_robot
 drawable ic_image_bluetooth_transfer
 drawable ic_image_country_flag
 drawable ic_image_file_transfer
+drawable ic_image_header_tagline
 drawable ic_image_infrared_communication
 drawable ic_image_math_clipart
+drawable ic_image_realtime_mc_services
+drawable ic_image_user_chooky
+drawable ic_image_zero
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3118,10 +3122,12 @@ drawable ic_ripple_outlined_pink
 drawable ic_ripple_solid_dark_maroon
 drawable ic_ripple_solid_maroon
 drawable ic_ripple_solid_pink
+drawable ic_ripple_solid_white
 drawable ic_ripple_transparent
 drawable ic_search_black_24
 drawable ic_shape_line_pink
 drawable ic_shape_solid_pink_thick
+drawable ic_vector_back
 drawable ic_vector_backspace
 drawable ic_vector_google_brands_solid
 drawable ic_vector_history
@@ -3314,6 +3320,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
 id button_add
+id button_back
 id button_backspace
 id button_bluetooth_transfer
 id button_bluetooth_wireless
@@ -3329,6 +3336,7 @@ id button_four
 id button_goto_signup
 id button_history
 id button_infrared_communication
+id button_lesson_zero
 id button_login
 id button_login_with_google
 id button_logout
@@ -3339,6 +3347,7 @@ id button_open_calculator
 id button_parenthesis
 id button_percent
 id button_point
+id button_realtime_mc_services
 id button_register
 id button_seven
 id button_signPN
@@ -3493,6 +3502,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView_robot_gif
+id imageview_lesson_zero
 id immediateStop
 id included
 id indeterminate
@@ -3505,6 +3515,9 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layout_application_container
+id layout_course_container
+id layout_header_container
 id left
 id leftToRight
 id legacy
@@ -3749,7 +3762,10 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textview_applications
+id textview_courses
 id textview_greeting_holder
+id textview_lesson_zero
 id time
 id title
 id titleDividerNoCustom
@@ -3911,6 +3927,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_calculator
 layout activity_home
+layout activity_infrared_communication
 layout activity_login
 layout activity_main
 layout activity_register
@@ -4052,6 +4069,7 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string cd_back_button
 string cd_backspace
 string cd_history
 string cd_user_profile
@@ -4228,6 +4246,7 @@ string six
 string status_bar_notification_info_overflow
 string subtract
 string text_android_version_label
+string text_applications
 string text_birth_time_label
 string text_birthdate_label
 string text_bluetooth_file_transfer
@@ -4236,13 +4255,16 @@ string text_country_flag
 string text_country_label
 string text_country_select
 string text_country_value
+string text_courses
 string text_dialog_alert_label
+string text_difficulty_easy
 string text_email_label
 string text_female_rb
 string text_gender_label
 string text_greeting_hello
 string text_greeting_hello_1
 string text_greeting_welcome
+string text_home_header_tagline
 string text_how_does_ir_communication_work
 string text_identifying_bluetooth
 string text_infrared_communication

@@ -3098,8 +3098,12 @@ int drawable ic_image_animated_robot 0x7f0800ae
 int drawable ic_image_bluetooth_transfer 0x7f0800af
 int drawable ic_image_country_flag 0x7f0800b0
 int drawable ic_image_file_transfer 0x7f0800b1
+int drawable ic_image_header_tagline 0x7f08011a
 int drawable ic_image_infrared_communication 0x7f0800b2
 int drawable ic_image_math_clipart 0x7f0800b3
+int drawable ic_image_realtime_mc_services 0x7f08011b
+int drawable ic_image_user_chooky 0x7f08011c
+int drawable ic_image_zero 0x7f08011d
 int drawable ic_keyboard_black_24dp 0x7f0800b4
 int drawable ic_launcher_background 0x7f0800b5
 int drawable ic_launcher_foreground 0x7f0800b6
@@ -3117,10 +3121,12 @@ int drawable ic_ripple_outlined_pink 0x7f0800c1
 int drawable ic_ripple_solid_dark_maroon 0x7f0800c2
 int drawable ic_ripple_solid_maroon 0x7f0800c3
 int drawable ic_ripple_solid_pink 0x7f0800c4
+int drawable ic_ripple_solid_white 0x7f08011e
 int drawable ic_ripple_transparent 0x7f0800c5
 int drawable ic_search_black_24 0x7f0800c6
 int drawable ic_shape_line_pink 0x7f0800c7
 int drawable ic_shape_solid_pink_thick 0x7f0800c8
+int drawable ic_vector_back 0x7f08011f
 int drawable ic_vector_backspace 0x7f0800c9
 int drawable ic_vector_google_brands_solid 0x7f0800ca
 int drawable ic_vector_history 0x7f0800cb
@@ -3313,6 +3319,7 @@ int id browser_actions_menu_items 0x7f0a0067
 int id browser_actions_menu_view 0x7f0a0068
 int id buttonPanel 0x7f0a0069
 int id button_add 0x7f0a006a
+int id button_back 0x7f0a0251
 int id button_backspace 0x7f0a006b
 int id button_bluetooth_transfer 0x7f0a006c
 int id button_bluetooth_wireless 0x7f0a006d
@@ -3328,6 +3335,7 @@ int id button_four 0x7f0a0076
 int id button_goto_signup 0x7f0a0077
 int id button_history 0x7f0a0078
 int id button_infrared_communication 0x7f0a0079
+int id button_lesson_zero 0x7f0a0252
 int id button_login 0x7f0a007a
 int id button_login_with_google 0x7f0a007b
 int id button_logout 0x7f0a007c
@@ -3338,6 +3346,7 @@ int id button_open_calculator 0x7f0a0080
 int id button_parenthesis 0x7f0a0081
 int id button_percent 0x7f0a0082
 int id button_point 0x7f0a0083
+int id button_realtime_mc_services 0x7f0a024b
 int id button_register 0x7f0a0084
 int id button_seven 0x7f0a0085
 int id button_signPN 0x7f0a0086
@@ -3492,6 +3501,7 @@ int id ignore 0x7f0a011a
 int id ignoreRequest 0x7f0a011b
 int id image 0x7f0a011c
 int id imageView_robot_gif 0x7f0a011d
+int id imageview_lesson_zero 0x7f0a0254
 int id immediateStop 0x7f0a011e
 int id included 0x7f0a011f
 int id indeterminate 0x7f0a0120
@@ -3504,6 +3514,9 @@ int id jumpToEnd 0x7f0a0126
 int id jumpToStart 0x7f0a0127
 int id labeled 0x7f0a0128
 int id layout 0x7f0a0129
+int id layout_application_container 0x7f0a024c
+int id layout_course_container 0x7f0a024d
+int id layout_header_container 0x7f0a024e
 int id left 0x7f0a012a
 int id leftToRight 0x7f0a012b
 int id legacy 0x7f0a012c
@@ -3748,7 +3761,10 @@ int id textinput_helper_text 0x7f0a021a
 int id textinput_placeholder 0x7f0a021b
 int id textinput_prefix_text 0x7f0a021c
 int id textinput_suffix_text 0x7f0a021d
+int id textview_applications 0x7f0a024f
+int id textview_courses 0x7f0a0250
 int id textview_greeting_holder 0x7f0a021e
+int id textview_lesson_zero 0x7f0a0253
 int id time 0x7f0a021f
 int id title 0x7f0a0220
 int id titleDividerNoCustom 0x7f0a0221
@@ -3910,6 +3926,7 @@ int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_calculator 0x7f0d001c
 int layout activity_home 0x7f0d001d
+int layout activity_infrared_communication 0x7f0d0076
 int layout activity_login 0x7f0d001e
 int layout activity_main 0x7f0d001f
 int layout activity_register 0x7f0d0020
@@ -4051,6 +4068,7 @@ int string call_notification_hang_up_action 0x7f12002c
 int string call_notification_incoming_text 0x7f12002d
 int string call_notification_ongoing_text 0x7f12002e
 int string call_notification_screening_text 0x7f12002f
+int string cd_back_button 0x7f12010c
 int string cd_backspace 0x7f120030
 int string cd_history 0x7f120031
 int string cd_user_profile 0x7f120032
@@ -4227,6 +4245,7 @@ int string six 0x7f1200dc
 int string status_bar_notification_info_overflow 0x7f1200dd
 int string subtract 0x7f1200de
 int string text_android_version_label 0x7f1200df
+int string text_applications 0x7f120109
 int string text_birth_time_label 0x7f1200e0
 int string text_birthdate_label 0x7f1200e1
 int string text_bluetooth_file_transfer 0x7f1200e2
@@ -4235,13 +4254,16 @@ int string text_country_flag 0x7f1200e4
 int string text_country_label 0x7f1200e5
 int string text_country_select 0x7f1200e6
 int string text_country_value 0x7f1200e7
+int string text_courses 0x7f12010a
 int string text_dialog_alert_label 0x7f1200e8
+int string text_difficulty_easy 0x7f12010d
 int string text_email_label 0x7f1200e9
 int string text_female_rb 0x7f1200ea
 int string text_gender_label 0x7f1200eb
 int string text_greeting_hello 0x7f1200ec
 int string text_greeting_hello_1 0x7f1200ed
 int string text_greeting_welcome 0x7f1200ee
+int string text_home_header_tagline 0x7f12010b
 int string text_how_does_ir_communication_work 0x7f1200ef
 int string text_identifying_bluetooth 0x7f1200f0
 int string text_infrared_communication 0x7f1200f1

@@ -41,6 +41,8 @@
     <string name="text_home_header_tagline">Explore different \ncourses and \napplications in \nAndroid Lab</string>
     <string name="text_applications">Applications</string>
     <string name="text_courses">Courses</string>
+    <string name="cd_back_button">Back</string>
+    <string name="text_difficulty_easy">Difficulty: Easy</string>
 
 
     <string name="calculator_sign">Calculator</string>
@@ -237,7 +239,7 @@
     </string-array>
 
 
-<!--    INFRARED COMMUNICATION -->
+    <!--    INFRARED COMMUNICATION -->
     <string name="title_what_is_ir_communication">
         What is Infrared (IR)?
     </string>
@@ -295,7 +297,6 @@
         However, in reality, that doesn’t seem to be a problem. Most IR receivers will still work
         with slight variations in wavelength and carrier frequency.
     </string>
-
 
 
 </resources>

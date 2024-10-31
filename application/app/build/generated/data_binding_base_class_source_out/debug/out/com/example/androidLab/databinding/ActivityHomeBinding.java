@@ -4,6 +4,7 @@ package com.example.androidLab.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -41,13 +42,31 @@ public final class ActivityHomeBinding implements ViewBinding {
   public final AppCompatButton buttonOpenCalculator;
 
   @NonNull
+  public final AppCompatButton buttonRealtimeMcServices;
+
+  @NonNull
   public final ImageButton buttonUserProfile;
 
   @NonNull
   public final CardView cardViewShadowedContainer;
 
   @NonNull
+  public final HorizontalScrollView layoutApplicationContainer;
+
+  @NonNull
+  public final HorizontalScrollView layoutCourseContainer;
+
+  @NonNull
+  public final ConstraintLayout layoutHeaderContainer;
+
+  @NonNull
   public final ConstraintLayout main;
+
+  @NonNull
+  public final TextView textviewApplications;
+
+  @NonNull
+  public final TextView textviewCourses;
 
   @NonNull
   public final TextView textviewGreetingHolder;
@@ -56,8 +75,13 @@ public final class ActivityHomeBinding implements ViewBinding {
       @NonNull AppCompatButton buttonBluetoothTransfer,
       @NonNull AppCompatButton buttonBluetoothWireless, @NonNull AppCompatButton buttonCountryFlag,
       @NonNull AppCompatButton buttonInfraredCommunication, @NonNull AppCompatButton buttonLogout,
-      @NonNull AppCompatButton buttonOpenCalculator, @NonNull ImageButton buttonUserProfile,
-      @NonNull CardView cardViewShadowedContainer, @NonNull ConstraintLayout main,
+      @NonNull AppCompatButton buttonOpenCalculator,
+      @NonNull AppCompatButton buttonRealtimeMcServices, @NonNull ImageButton buttonUserProfile,
+      @NonNull CardView cardViewShadowedContainer,
+      @NonNull HorizontalScrollView layoutApplicationContainer,
+      @NonNull HorizontalScrollView layoutCourseContainer,
+      @NonNull ConstraintLayout layoutHeaderContainer, @NonNull ConstraintLayout main,
+      @NonNull TextView textviewApplications, @NonNull TextView textviewCourses,
       @NonNull TextView textviewGreetingHolder) {
     this.rootView = rootView;
     this.buttonBluetoothTransfer = buttonBluetoothTransfer;
@@ -66,9 +90,15 @@ public final class ActivityHomeBinding implements ViewBinding {
     this.buttonInfraredCommunication = buttonInfraredCommunication;
     this.buttonLogout = buttonLogout;
     this.buttonOpenCalculator = buttonOpenCalculator;
+    this.buttonRealtimeMcServices = buttonRealtimeMcServices;
     this.buttonUserProfile = buttonUserProfile;
     this.cardViewShadowedContainer = cardViewShadowedContainer;
+    this.layoutApplicationContainer = layoutApplicationContainer;
+    this.layoutCourseContainer = layoutCourseContainer;
+    this.layoutHeaderContainer = layoutHeaderContainer;
     this.main = main;
+    this.textviewApplications = textviewApplications;
+    this.textviewCourses = textviewCourses;
     this.textviewGreetingHolder = textviewGreetingHolder;
   }
 
@@ -135,6 +165,12 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button_realtime_mc_services;
+      AppCompatButton buttonRealtimeMcServices = ViewBindings.findChildViewById(rootView, id);
+      if (buttonRealtimeMcServices == null) {
+        break missingId;
+      }
+
       id = R.id.button_user_profile;
       ImageButton buttonUserProfile = ViewBindings.findChildViewById(rootView, id);
       if (buttonUserProfile == null) {
@@ -147,7 +183,37 @@ public final class ActivityHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layout_application_container;
+      HorizontalScrollView layoutApplicationContainer = ViewBindings.findChildViewById(rootView, id);
+      if (layoutApplicationContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.layout_course_container;
+      HorizontalScrollView layoutCourseContainer = ViewBindings.findChildViewById(rootView, id);
+      if (layoutCourseContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.layout_header_container;
+      ConstraintLayout layoutHeaderContainer = ViewBindings.findChildViewById(rootView, id);
+      if (layoutHeaderContainer == null) {
+        break missingId;
+      }
+
       ConstraintLayout main = (ConstraintLayout) rootView;
+
+      id = R.id.textview_applications;
+      TextView textviewApplications = ViewBindings.findChildViewById(rootView, id);
+      if (textviewApplications == null) {
+        break missingId;
+      }
+
+      id = R.id.textview_courses;
+      TextView textviewCourses = ViewBindings.findChildViewById(rootView, id);
+      if (textviewCourses == null) {
+        break missingId;
+      }
 
       id = R.id.textview_greeting_holder;
       TextView textviewGreetingHolder = ViewBindings.findChildViewById(rootView, id);
@@ -157,7 +223,9 @@ public final class ActivityHomeBinding implements ViewBinding {
 
       return new ActivityHomeBinding((ConstraintLayout) rootView, buttonBluetoothTransfer,
           buttonBluetoothWireless, buttonCountryFlag, buttonInfraredCommunication, buttonLogout,
-          buttonOpenCalculator, buttonUserProfile, cardViewShadowedContainer, main,
+          buttonOpenCalculator, buttonRealtimeMcServices, buttonUserProfile,
+          cardViewShadowedContainer, layoutApplicationContainer, layoutCourseContainer,
+          layoutHeaderContainer, main, textviewApplications, textviewCourses,
           textviewGreetingHolder);
     }
     String missingId = rootView.getResources().getResourceName(id);

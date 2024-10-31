@@ -40,7 +40,8 @@ public class HomeActivity extends AppCompatActivity {
 
         setUsername();
         binding.buttonLogout.setOnTouchListener(this::onLogoutButtonClicked);
-        binding.buttonOpenCalculator.setOnTouchListener(this::onOpenCalculatorClicked);
+        binding.buttonOpenCalculator.setOnClickListener(this::onOpenCalculatorClicked);
+        binding.buttonInfraredCommunication.setOnClickListener(this::onOpenIrCommClicked);
     }
 
     private void setUsername() {
@@ -63,14 +64,19 @@ public class HomeActivity extends AppCompatActivity {
         return false;
     }
 
-    private boolean onOpenCalculatorClicked(View v, MotionEvent motion){
-        if (motion.getAction() != MotionEvent.ACTION_DOWN)
-            return true;
-
-        Intent Calculator = new Intent(HomeActivity.this, CalculatorActivity.class);
-        Calculator.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+    private void onOpenCalculatorClicked(View v){
+        Intent Calculator = new Intent(
+            HomeActivity.this,
+            CalculatorActivity.class
+        );
         startActivity(Calculator);
+    }
 
-        return false;
+    private void onOpenIrCommClicked(View view) {
+        Intent IrComm = new Intent(
+            HomeActivity.this,
+            InfraredCommunicationActivity.class
+        );
+        startActivity(IrComm);
     }
 }

@@ -58,17 +58,13 @@ public class CalculatorActivity extends AppCompatActivity {
         setUpOperatorButton();
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-
-        Intent intent = new Intent(this, HomeActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
-        startActivity(intent);
-
-        finish();
-    }
-
+//    @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//        Intent intent = new Intent(this, HomeActivity.class);
+//        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//        startActivity(intent);
+//    }
 
     private void setUpWindowInsets() {
         ViewCompat.setOnApplyWindowInsetsListener(binding.main, (v, insets) -> {

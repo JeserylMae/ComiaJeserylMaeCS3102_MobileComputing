@@ -156,7 +156,7 @@
     <color name="black">#FF000000</color>
     <color name="dark_maroon">#98534E</color>
     <color name="gradient_pink">#FFFF8982</color>
-    <color name="gray">#DFDCDC</color>
+    <color name="gray">#DFD3D3</color>
     <color name="ic_launcher_background">#F5E9DD</color>
     <color name="light_pink">#33E85D56</color>
     <color name="maroon">#8D1F19</color>
@@ -168,6 +168,7 @@
     <string name="app_name">Android Lab</string>
     <string name="app_name_separated">Android \nLab</string>
     <string name="calculator_sign">Calculator</string>
+    <string name="cd_back_button">Back</string>
     <string name="cd_backspace">Backspace</string>
     <string name="cd_history">History</string>
     <string name="cd_user_profile">View Profile</string>
@@ -198,6 +199,7 @@
     <string name="six">6</string>
     <string name="subtract">-</string>
     <string name="text_android_version_label">Android Lab ver 1.0.0</string>
+    <string name="text_applications">Applications</string>
     <string name="text_birth_time_label">Birth Time</string>
     <string name="text_birthdate_label">Birth Date</string>
     <string name="text_bluetooth_file_transfer">Bluetooth File Transfer</string>
@@ -206,13 +208,16 @@
     <string name="text_country_label">Country</string>
     <string name="text_country_select">Select Region</string>
     <string name="text_country_value">Philippines</string>
+    <string name="text_courses">Courses</string>
     <string name="text_dialog_alert_label">SUBMITTED INFORMATION</string>
+    <string name="text_difficulty_easy">Difficulty: Easy</string>
     <string name="text_email_label">Email Address</string>
     <string name="text_female_rb">Female</string>
     <string name="text_gender_label">Gender</string>
     <string name="text_greeting_hello">Hello!</string>
     <string name="text_greeting_hello_1">Hello,</string>
     <string name="text_greeting_welcome">Welcome to Android Lab!</string>
+    <string name="text_home_header_tagline">Explore different \ncourses and \napplications in \nAndroid Lab</string>
     <string name="text_how_does_ir_communication_work">
         Infrared LEDs produce light that’s not visible to the human eye. Typically, the wavelength
         of light that such devices output is around 950 nanometers. However, IR LEDs aren’t the
