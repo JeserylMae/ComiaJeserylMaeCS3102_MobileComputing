@@ -51,7 +51,7 @@
                 android:layout_marginVertical="20dp"
                 android:background="@drawable/ic_ripple_transparent"
                 android:contentDescription="@string/cd_user_profile"
-                android:src="@drawable/ic_vector_user"
+                android:src="@drawable/ic_image_user_chooky"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
@@ -63,12 +63,11 @@
             app:layout_constraintTop_toBottomOf="@id/button_user_profile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent">
+            app:layout_constraintBottom_toTopOf="@id/button_logout">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="80dp">
+            android:layout_height="wrap_content">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/layout_header_container"
@@ -78,7 +77,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:background="@drawable/ic_background_solid_pink"
                 app:layout_constraintStart_toStartOf="parent"
-                android:padding="10dp">
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="20dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -112,13 +112,17 @@
                 android:textSize="20sp"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layout_header_container"
                 />
 
-            <ScrollView
+            <HorizontalScrollView
+                android:id="@+id/layout_application_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="10dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textview_applications">
 
@@ -130,131 +134,143 @@
                         android:id="@+id/button_open_calculator"
                         android:layout_width="250dp"
                         android:layout_height="120dp"
-                        android:layout_marginTop="10dp"
-                        android:paddingVertical="5dp"
                         android:fontFamily="@font/jua"
                         android:textColor="@color/beige"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textAllCaps="false"
                         android:textAlignment="textStart"
-                        android:paddingStart="20dp"
-                        android:paddingEnd="20dp"
+                        android:paddingStart="10dp"
                         android:text="@string/calculator_sign"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        android:background="@drawable/ic_ripple_solid_pink"
-                        android:drawableEnd="@drawable/ic_image_math_clipart"
                         app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/ic_ripple_solid_maroon"
+                        android:drawableEnd="@drawable/ic_image_math_clipart"
+                        tools:ignore="RtlSymmetry"
                         />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/button_open"
-                        android:layout_width="250dp"
+                        android:id="@+id/button_country_flag"
+                        android:layout_width="260dp"
                         android:layout_height="120dp"
-                        android:layout_marginTop="10dp"
-                        android:paddingVertical="5dp"
+                        android:layout_marginStart="10dp"
                         android:fontFamily="@font/jua"
                         android:textColor="@color/beige"
-                        android:textSize="20sp"
+                        android:textSize="18sp"
                         android:textAllCaps="false"
                         android:textAlignment="textStart"
-                        android:paddingStart="20dp"
-                        android:paddingEnd="20dp"
-                        android:text="@string/calculator_sign"
-                        app:layout_constraintStart_toEndOf="@id/button_open_calculator"
+                        android:paddingStart="10dp"
+                        android:text="@string/text_country_flag"
                         android:background="@drawable/ic_ripple_solid_pink"
-                        android:drawableEnd="@drawable/ic_image_math_clipart"
+                        android:drawableEnd="@drawable/ic_image_country_flag"
                         app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/button_open_calculator"
+                        tools:ignore="RtlSymmetry"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textview_courses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_courses"
+                android:fontFamily="@font/jua"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layout_application_container"
+                />
+
+            <HorizontalScrollView
+                android:id="@+id/layout_course_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_courses">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_infrared_communication"
+                        android:layout_width="260dp"
+                        android:layout_height="120dp"
+                        android:fontFamily="@font/jua"
+                        android:textColor="@color/beige"
+                        android:textSize="18sp"
+                        android:textAllCaps="false"
+                        android:textAlignment="textStart"
+                        android:paddingStart="10dp"
+                        android:text="@string/text_infrared_communication"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@drawable/ic_ripple_solid_pink"
+                        android:drawableEnd="@drawable/ic_image_infrared_communication"
                         />
 
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_bluetooth_transfer"
+                        android:layout_width="260dp"
+                        android:layout_height="120dp"
+                        android:fontFamily="@font/jua"
+                        android:textColor="@color/beige"
+                        android:textSize="18sp"
+                        android:textAllCaps="false"
+                        android:textAlignment="textStart"
+                        android:paddingStart="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/ic_ripple_solid_maroon"
+                        android:drawableEnd="@drawable/ic_image_bluetooth_transfer"
+                        android:text="@string/text_bluetooth_file_transfer"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/button_infrared_communication"
+                        tools:ignore="RtlSymmetry"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_bluetooth_wireless"
+                        android:layout_width="260dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/jua"
+                        android:textColor="@color/beige"
+                        android:textSize="18sp"
+                        android:textAllCaps="false"
+                        android:textAlignment="textStart"
+                        android:paddingStart="10dp"
+                        android:text="@string/text_identifying_bluetooth"
+                        android:background="@drawable/ic_ripple_solid_pink"
+                        android:drawableEnd="@drawable/ic_image_file_transfer"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/button_bluetooth_transfer"
+                        tools:ignore="RtlSymmetry"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/button_realtime_mc_services"
+                        android:layout_width="260dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/jua"
+                        android:textColor="@color/beige"
+                        android:textSize="18sp"
+                        android:textAllCaps="false"
+                        android:textAlignment="textStart"
+                        android:padding="10dp"
+                        android:text="@string/text_realtime_mc_services"
+                        android:background="@drawable/ic_ripple_solid_maroon"
+                        android:drawableEnd="@drawable/ic_image_realtime_mc_services"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/button_bluetooth_wireless"
+                        tools:ignore="RtlSymmetry"
+                        />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-            </ScrollView>
-
-
-
-<!--            <androidx.appcompat.widget.AppCompatButton-->
-<!--                android:id="@+id/button_infrared_communication"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="120dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:paddingVertical="5dp"-->
-<!--                android:fontFamily="@font/jua"-->
-<!--                android:textColor="@color/beige"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textAllCaps="false"-->
-<!--                android:textAlignment="textStart"-->
-<!--                android:paddingStart="20dp"-->
-<!--                android:paddingEnd="20dp"-->
-<!--                android:text="@string/text_infrared_communication"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/button_open_calculator"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                android:background="@drawable/ic_ripple_solid_maroon"-->
-<!--                android:drawableEnd="@drawable/ic_image_infrared_communication"-->
-<!--                />-->
-
-<!--            <androidx.appcompat.widget.AppCompatButton-->
-<!--                android:id="@+id/button_bluetooth_transfer"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="120dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:paddingVertical="5dp"-->
-<!--                android:fontFamily="@font/jua"-->
-<!--                android:textColor="@color/beige"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textAllCaps="false"-->
-<!--                android:textAlignment="textStart"-->
-<!--                android:paddingStart="20dp"-->
-<!--                android:paddingEnd="20dp"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                android:background="@drawable/ic_ripple_solid_pink"-->
-<!--                android:drawableEnd="@drawable/ic_image_bluetooth_transfer"-->
-<!--                android:text="@string/text_bluetooth_file_transfer"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/button_infrared_communication"-->
-<!--                />-->
-
-<!--            <androidx.appcompat.widget.AppCompatButton-->
-<!--                android:id="@+id/button_bluetooth_wireless"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="120dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:paddingVertical="5dp"-->
-<!--                android:fontFamily="@font/jua"-->
-<!--                android:textColor="@color/beige"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textAllCaps="false"-->
-<!--                android:textAlignment="textStart"-->
-<!--                android:paddingStart="20dp"-->
-<!--                android:paddingEnd="20dp"-->
-<!--                android:text="@string/text_identifying_bluetooth"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                android:background="@drawable/ic_ripple_solid_maroon"-->
-<!--                android:drawableEnd="@drawable/ic_image_file_transfer"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/button_bluetooth_transfer"-->
-<!--                />-->
-
-<!--            <androidx.appcompat.widget.AppCompatButton-->
-<!--                android:id="@+id/button_country_flag"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="120dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:paddingVertical="5dp"-->
-<!--                android:fontFamily="@font/jua"-->
-<!--                android:textColor="@color/beige"-->
-<!--                android:textSize="20sp"-->
-<!--                android:textAllCaps="false"-->
-<!--                android:textAlignment="textStart"-->
-<!--                android:paddingStart="20dp"-->
-<!--                android:paddingEnd="20dp"-->
-<!--                android:text="@string/text_country_flag"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/button_bluetooth_wireless"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                android:background="@drawable/ic_ripple_solid_pink"-->
-<!--                android:drawableEnd="@drawable/ic_image_country_flag"-->
-<!--                />-->
+            </HorizontalScrollView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
         </ScrollView>
@@ -268,12 +284,12 @@
                 android:textAllCaps="true"
                 android:fontFamily="@font/jua"
                 android:paddingHorizontal="20dp"
-                android:drawablePadding="10dp"
+                android:drawablePadding="20dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginEnd="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:drawableStart="@drawable/ic_vector_logout"
-                android:background="@drawable/ic_ripple_solid_dark_maroon"
+                android:background="@drawable/ic_ripple_solid_maroon"
                 app:layout_constraintBottom_toBottomOf="parent"
                 />
 
