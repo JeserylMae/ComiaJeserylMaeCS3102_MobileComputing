@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,16 +14,14 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.androidLab.databinding.ActivityHomeBinding;
 import com.example.androidLab.models.RegistrationModel;
-import com.example.androidLab.viewModel.UserViewModel;
+import com.example.androidLab.repository.UserRepository;
 
-import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
 
-    String userId;
     RegistrationModel userInfo;
     ActivityHomeBinding binding;
-    UserViewModel userViewModel;
+    UserRepository userRepository;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -41,17 +38,18 @@ public class HomeActivity extends AppCompatActivity {
             return insets;
         });
 
-        userId        = getIntent().getStringExtra("userId");
-        userViewModel = new UserViewModel(this.getApplication());
-        userInfo      = userViewModel.getUserCredentials(userId);
-
-        Toast.makeText(this, "USER: "+userInfo.getUsername(), Toast.LENGTH_SHORT).show();
-
-        String greeting = String.valueOf(binding.textviewGreetingHolder.getText());
-        binding.textviewGreetingHolder.setText(String.format("%s %s!", greeting, userInfo.getUsername()));
-
+        setUsername();
         binding.buttonLogout.setOnTouchListener(this::onLogoutButtonClicked);
         binding.buttonOpenCalculator.setOnTouchListener(this::onOpenCalculatorClicked);
+    }
+
+    private void setUsername() {
+        userInfo = (RegistrationModel) getIntent().getSerializableExtra("USERINFO");
+
+        assert userInfo != null;
+        String firstname = userInfo.getUsername().split(" ")[0];
+        String greeting = String.valueOf(binding.textviewGreetingHolder.getText());
+        binding.textviewGreetingHolder.setText(String.format("%s %s!", greeting, firstname));
     }
 
     private boolean onLogoutButtonClicked(View v, MotionEvent motion) {

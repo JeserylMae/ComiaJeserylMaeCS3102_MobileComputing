@@ -33,20 +33,20 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 import com.example.androidLab.models.RegistrationModel;
-import com.example.androidLab.viewModel.UserViewModel;
+import com.example.androidLab.repository.UserRepository;
+import com.example.androidLab.utils.Validation;
 
 public class RegisterActivity extends AppCompatActivity
 {
     AlertDialog dialog;
     String[] regionArray, stateArray;
     ActivityRegisterBinding binding;
-    UserViewModel userViewModel;
+    UserRepository userRepository;
 
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
@@ -59,8 +59,7 @@ public class RegisterActivity extends AppCompatActivity
             return insets;
         });
 
-        userViewModel = new UserViewModel(this.getApplication());
-
+        userRepository = new UserRepository(this.getApplication());
         regionArray = getResources().getStringArray(R.array.array_region_dropdown);
         onDropDownClicked(binding.dropdownRegion, regionArray);
 
@@ -72,8 +71,7 @@ public class RegisterActivity extends AppCompatActivity
     }
 
     @Override
-    public void onBackPressed()
-    {
+    public void onBackPressed() {
         super.onBackPressed();
         Intent intent = new Intent(this, MainActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
@@ -82,20 +80,18 @@ public class RegisterActivity extends AppCompatActivity
 
     // Listener Methods.
     private boolean onConfirmButtonClicked(View v, MotionEvent motionEvent,
-                                           RegistrationModel user)
-    {
+                                           RegistrationModel user) {
         if (motionEvent.getAction() != MotionEvent.ACTION_DOWN)
             return true;
 
-        userViewModel.register(user);
+        userRepository.register(user);
         clearTextboxes();
         dialog.dismiss();
 
         return false;
     }
 
-    private boolean onCancelButtonClicked(View v, MotionEvent motion)
-    {
+    private boolean onCancelButtonClicked(View v, MotionEvent motion) {
         if (motion.getAction() != MotionEvent.ACTION_DOWN)
             return true;
 
@@ -103,38 +99,33 @@ public class RegisterActivity extends AppCompatActivity
         return false;
     }
 
-    private boolean onRegisterButtonClicked(View view, MotionEvent motion)
-    {
+    private boolean onRegisterButtonClicked(View view, MotionEvent motion) {
         if (motion.getAction() != MotionEvent.ACTION_DOWN)
             return true;
 
         RegistrationModel model = setRegistrationModelValues();
 
-        if (hasNullOrEmptyValue(model)){
+        if (Validation.hasNullOrEmptyValue(model)) {
             displayMessage("Registration failed. Some fields are EMPTY.");
             return true;
         }
-
         showModelInDialog(model);
         return false;
     }
 
-    private void onStateDropDownFocused(View v, boolean hasFocus)
-    {
+    private void onStateDropDownFocused(View v, boolean hasFocus) {
         if (stateArray != null) return;
         displayMessage("Select a country first.");
     }
 
-    private void onCountryClicked(AdapterView<?> adapterView, View v, int index, long l)
-    {
+    private void onCountryClicked(AdapterView<?> adapterView, View v, int index, long l) {
         String item = adapterView.getItemAtPosition(index).toString();
         stateArray = getStateArray(item);
 
         onDropDownClicked(binding.dropdownProvince, stateArray);
     }
 
-    private void onDropDownClicked(AutoCompleteTextView view, String[] array)
-    {
+    private void onDropDownClicked(AutoCompleteTextView view, String[] array) {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,
                 R.layout.dialog_country_dropdown,
@@ -143,14 +134,12 @@ public class RegisterActivity extends AppCompatActivity
         view.setAdapter(adapter);
     }
 
-    private boolean onBirthDateEditTextClicked(View v, MotionEvent motion)
-    {
+    private boolean onBirthDateEditTextClicked(View v, MotionEvent motion) {
         if (motion.getAction() != MotionEvent.ACTION_DOWN)
             return true;
 
         LocalDate currentDate = LocalDate.now();
-        DatePickerDialog calendar = new DatePickerDialog
-        (
+        DatePickerDialog calendar = new DatePickerDialog(
             this,
             R.style.CustomDatePickerTheme,
             this::onDateSet,
@@ -162,15 +151,13 @@ public class RegisterActivity extends AppCompatActivity
         return false;
     }
 
-    private boolean onBirthTimeEditTextClicked(View v, MotionEvent motion)
-    {
+    private boolean onBirthTimeEditTextClicked(View v, MotionEvent motion) {
         if (motion.getAction() != MotionEvent.ACTION_DOWN)
             return true;
 
         LocalTime currentTime = LocalTime.now();
 
-        TimePickerDialog clock = new TimePickerDialog
-        (
+        TimePickerDialog clock = new TimePickerDialog(
             this,
             R.style.CustomTimePickerTheme,
             this::onTimeSet,
@@ -182,8 +169,7 @@ public class RegisterActivity extends AppCompatActivity
         return false;
     }
 
-    public void onDateSet(DatePicker datePicker, int year, int month, int day)
-    {
+    public void onDateSet(DatePicker datePicker, int year, int month, int day) {
         String monthName = new DateFormatSymbols().getMonths()[datePicker.getMonth()];
 
         @SuppressLint("DefaultLocale") String date = String.format(
@@ -195,8 +181,7 @@ public class RegisterActivity extends AppCompatActivity
         binding.editTextBirthdate.setText(date);
     }
 
-    public void onTimeSet(TimePicker timePicker, int hour, int minute)
-    {
+    public void onTimeSet(TimePicker timePicker, int hour, int minute) {
         String time = convertMilitaryTime(
             timePicker.getHour(),
             timePicker.getMinute()
@@ -207,8 +192,7 @@ public class RegisterActivity extends AppCompatActivity
 
     // Helper Methods.
     @SuppressLint("ClickableViewAccessibility")
-    private void showModelInDialog(RegistrationModel model)
-    {
+    private void showModelInDialog(RegistrationModel model) {
         LayoutInflater inflater = getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_submit, null);
 
@@ -231,10 +215,8 @@ public class RegisterActivity extends AppCompatActivity
         );
     }
 
-    private String[] getStateArray(String selectedCountry)
-    {
-        switch (selectedCountry)
-        {
+    private String[] getStateArray(String selectedCountry) {
+        switch (selectedCountry) {
             case "Region I - Ilocos Region":
                 return getResources().getStringArray(R.array.array_region_i_dropdown);
             case "Region II - Cagayan Valley":
@@ -274,8 +256,7 @@ public class RegisterActivity extends AppCompatActivity
         }
     }
 
-    private String convertMilitaryTime(int hour, int minute)
-    {
+    private String convertMilitaryTime(int hour, int minute) {
         String amPm;
         int newHour;
 
@@ -296,8 +277,7 @@ public class RegisterActivity extends AppCompatActivity
         return formattedTime;
     }
 
-    private RegistrationModel setRegistrationModelValues()
-    {
+    private RegistrationModel setRegistrationModelValues() {
         RegistrationModel model;
 
         model = new RegistrationModel();
@@ -321,8 +301,7 @@ public class RegisterActivity extends AppCompatActivity
         return model;
     }
 
-    private void clearTextboxes()
-    {
+    private void clearTextboxes() {
         binding.editTextUsername.setText(null);
         binding.editTextPassword.setText(null);
         binding.editTextEmail.setText(null);
@@ -336,8 +315,7 @@ public class RegisterActivity extends AppCompatActivity
         binding.editTextBirthtime.setText(null);
     }
 
-    private String formatInformationSummary(RegistrationModel model)
-    {
+    private String formatInformationSummary(RegistrationModel model) {
         return "USERNAME: " + model.getUsername() + "\n"
             + "PASSWORD: " + model.getPassword() + "\n"
             + "EMAIL ADDRESS: " + model.getEmailAddress() + "\n"
@@ -351,27 +329,7 @@ public class RegisterActivity extends AppCompatActivity
             + "BIRTH TIME: " + model.getBirthTime();
     }
 
-    private boolean hasNullOrEmptyValue(RegistrationModel model)  {
-        Field[] fields = model.getClass().getDeclaredFields();
-        for (Field field : fields) {
-            field.setAccessible(true);
-            Object value = null;
-
-            try {
-                value = field.get(model);
-            } catch (IllegalAccessException e) {
-                throw new RuntimeException(e);
-            }
-
-            if (value == null || (value instanceof String && ((String) value).isEmpty())) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private void displayMessage(String message)
-    {
+    private void displayMessage(String message) {
         Toast.makeText(
             RegisterActivity.this,
              message,

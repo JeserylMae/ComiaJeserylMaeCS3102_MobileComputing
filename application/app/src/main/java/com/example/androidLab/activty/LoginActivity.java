@@ -14,11 +14,15 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.androidLab.databinding.ActivityLoginBinding;
-import com.example.androidLab.viewModel.UserViewModel;
+import com.example.androidLab.models.RegistrationModel;
+import com.example.androidLab.models.onUserDataFetchedListener;
+import com.example.androidLab.repository.UserRepository;
+import com.example.androidLab.utils.Validation;
 
 public class LoginActivity extends AppCompatActivity
 {
-    UserViewModel userViewModel;
+    RegistrationModel userInfo;
+    UserRepository userRepository;
     ActivityLoginBinding binding;
 
     @SuppressLint("ClickableViewAccessibility")
@@ -37,7 +41,8 @@ public class LoginActivity extends AppCompatActivity
             return insets;
         });
 
-        userViewModel = new UserViewModel(this.getApplication());
+        userInfo = new RegistrationModel();
+        userRepository = new UserRepository(this.getApplication());
         binding.buttonLogin.setOnTouchListener(this::onLoginButtonClicked);
         binding.buttonGotoSignup.setOnTouchListener(this::onGotoSignUpButtonClicked);
         binding.buttonLoginWithGoogle.setOnTouchListener(this::onGoogleLoginButtonClicked);
@@ -52,45 +57,53 @@ public class LoginActivity extends AppCompatActivity
         startActivity(intent);
     }
 
-    private boolean onLoginButtonClicked(View v, MotionEvent motion)
-    {
+    private boolean onLoginButtonClicked(View v, MotionEvent motion) {
         if (motion.getAction() != MotionEvent.ACTION_DOWN) {
             return true;
         }
 
+        if (!loginWithEmailAndPass()) {
+            Toast.makeText(this,"Login Error! \nEnsure all information are correct",
+                Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        getUserCredentials();
+        return false;
+    }
+
+    private boolean loginWithEmailAndPass() {
         String email, password;
         password = binding.editTextPassword.getText().toString();
         email = binding.editTextEmailAddress.getText().toString();
 
         if (hasNullOrEmptyValues(email, password)){
             displayMessage("Login failed! Some fields are empty!");
-            return true;
+            return false;
         }
-
-        boolean isLoggedIn = userViewModel.login(email, password);
-
-        if (isLoggedIn) {
-            Intent HomePage = new Intent(LoginActivity.this, HomeActivity.class);
-            HomePage.putExtra("userId", userViewModel.getUid());
-            HomePage.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            startActivity(HomePage);
-        }
-
-        return false;
+        return userRepository.login(email, password);
     }
 
-    private boolean onGoogleLoginButtonClicked(View v, MotionEvent motion)
-    {
-        if (motion.getAction() != MotionEvent.ACTION_DOWN){
+    private void getUserCredentials() {
+        String userId = userRepository.getUid();
+        userRepository.getUserCredentials(userId, this::initializeHomePage);
+    }
+
+    private void initializeHomePage(RegistrationModel userInfo) {
+        Intent HomePage = new Intent(LoginActivity.this, HomeActivity.class);
+        HomePage.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        HomePage.putExtra("USERINFO", userInfo);
+        startActivity(HomePage);
+    }
+
+    private boolean onGoogleLoginButtonClicked(View v, MotionEvent motion) {
+        if (motion.getAction() != MotionEvent.ACTION_DOWN) {
             return true;
         }
         displayMessage("Display only.");
-
         return false;
     }
 
-    private boolean onGotoSignUpButtonClicked(View v, MotionEvent motion)
-    {
+    private boolean onGotoSignUpButtonClicked(View v, MotionEvent motion) {
         if(motion.getAction() != MotionEvent.ACTION_DOWN) return true;
 
         Intent signUpPage = new Intent(LoginActivity.this, RegisterActivity.class);
@@ -100,8 +113,7 @@ public class LoginActivity extends AppCompatActivity
         return false;
     }
 
-    private boolean hasNullOrEmptyValues(String email, String password)
-    {
+    private boolean hasNullOrEmptyValues(String email, String password) {
         return (email == null
             || email.isEmpty()
             || password == null
@@ -109,9 +121,7 @@ public class LoginActivity extends AppCompatActivity
         );
     }
 
-    private void displayMessage(String message)
-    {
-        Toast.makeText(this, message, Toast.LENGTH_LONG)
-            .show();
+    private void displayMessage(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 }

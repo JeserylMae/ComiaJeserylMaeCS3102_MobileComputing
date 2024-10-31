@@ -1,6 +1,9 @@
 package com.example.androidLab.models;
 
-public class RegistrationModel {
+import java.io.Serializable;
+
+
+public class RegistrationModel implements Serializable {
     private String username;
     private String password;
     private String emailAddress;

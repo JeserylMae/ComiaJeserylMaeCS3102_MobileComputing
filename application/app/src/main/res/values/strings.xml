@@ -38,6 +38,10 @@
     <string name="text_identifying_bluetooth">Identifying Bluetooth in Wireless Range</string>
     <string name="text_country_flag">Country\'s Flag Identifier</string>
     <string name="text_realtime_mc_services">Different Realtime Mobile Communicating Services</string>
+    <string name="text_home_header_tagline">Explore different \ncourses and \napplications in \nAndroid Lab</string>
+    <string name="text_applications">Applications</string>
+    <string name="text_courses">Courses</string>
+
 
     <string name="calculator_sign">Calculator</string>
     <string name="zero">0</string>
