@@ -1,5 +1,5 @@
-com.example.exercise2.test.app-core-1.6.1-0 C:\Users\jesay\.gradle\caches\transforms-4\22bdccb7a6c8956c2fb1968395f08968\transformed\core-1.6.1\res
-com.example.exercise2.test.app-androidTest-1 D:\AndroidProjects\MobileComputing\Exercise Sets\Exercise #2\app\build\generated\res\resValues\androidTest\debug
-com.example.exercise2.test.app-mergeDebugAndroidTestResources-2 D:\AndroidProjects\MobileComputing\Exercise Sets\Exercise #2\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.example.exercise2.test.app-mergeDebugAndroidTestResources-3 D:\AndroidProjects\MobileComputing\Exercise Sets\Exercise #2\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.example.exercise2.test.app-debugAndroidTest-4 D:\AndroidProjects\MobileComputing\Exercise Sets\Exercise #2\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+com.example.androidLab.test.app-core-1.6.1-0 C:\Users\jesay\.gradle\caches\transforms-4\b75673f712e788e2199024c455de0f13\transformed\core-1.6.1\res
+com.example.androidLab.test.app-androidTest-1 D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\build\generated\res\resValues\androidTest\debug
+com.example.androidLab.test.app-mergeDebugAndroidTestResources-2 D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.androidLab.test.app-mergeDebugAndroidTestResources-3 D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.androidLab.test.app-debugAndroidTest-4 D:\AndroidProjects\ComiaJeserylMaeCS3102_MobileComputing\application\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

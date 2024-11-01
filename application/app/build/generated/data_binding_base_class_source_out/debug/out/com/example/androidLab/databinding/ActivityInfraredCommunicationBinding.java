@@ -26,10 +26,34 @@ public final class ActivityInfraredCommunicationBinding implements ViewBinding {
   public final ImageButton buttonBack;
 
   @NonNull
+  public final ConstraintLayout buttonLessonFour;
+
+  @NonNull
+  public final ConstraintLayout buttonLessonOne;
+
+  @NonNull
+  public final ConstraintLayout buttonLessonThree;
+
+  @NonNull
+  public final ConstraintLayout buttonLessonTwo;
+
+  @NonNull
   public final ConstraintLayout buttonLessonZero;
 
   @NonNull
   public final CardView cardViewShadowedContainer;
+
+  @NonNull
+  public final ImageView imageviewLessonFour;
+
+  @NonNull
+  public final ImageView imageviewLessonOne;
+
+  @NonNull
+  public final ImageView imageviewLessonThree;
+
+  @NonNull
+  public final ImageView imageviewLessonTwo;
 
   @NonNull
   public final ImageView imageviewLessonZero;
@@ -41,20 +65,50 @@ public final class ActivityInfraredCommunicationBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final TextView textviewLessonFour;
+
+  @NonNull
+  public final TextView textviewLessonOne;
+
+  @NonNull
+  public final TextView textviewLessonThree;
+
+  @NonNull
+  public final TextView textviewLessonTwo;
+
+  @NonNull
   public final TextView textviewLessonZero;
 
   private ActivityInfraredCommunicationBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageButton buttonBack, @NonNull ConstraintLayout buttonLessonZero,
-      @NonNull CardView cardViewShadowedContainer, @NonNull ImageView imageviewLessonZero,
+      @NonNull ImageButton buttonBack, @NonNull ConstraintLayout buttonLessonFour,
+      @NonNull ConstraintLayout buttonLessonOne, @NonNull ConstraintLayout buttonLessonThree,
+      @NonNull ConstraintLayout buttonLessonTwo, @NonNull ConstraintLayout buttonLessonZero,
+      @NonNull CardView cardViewShadowedContainer, @NonNull ImageView imageviewLessonFour,
+      @NonNull ImageView imageviewLessonOne, @NonNull ImageView imageviewLessonThree,
+      @NonNull ImageView imageviewLessonTwo, @NonNull ImageView imageviewLessonZero,
       @NonNull ConstraintLayout layoutHeaderContainer, @NonNull ConstraintLayout main,
+      @NonNull TextView textviewLessonFour, @NonNull TextView textviewLessonOne,
+      @NonNull TextView textviewLessonThree, @NonNull TextView textviewLessonTwo,
       @NonNull TextView textviewLessonZero) {
     this.rootView = rootView;
     this.buttonBack = buttonBack;
+    this.buttonLessonFour = buttonLessonFour;
+    this.buttonLessonOne = buttonLessonOne;
+    this.buttonLessonThree = buttonLessonThree;
+    this.buttonLessonTwo = buttonLessonTwo;
     this.buttonLessonZero = buttonLessonZero;
     this.cardViewShadowedContainer = cardViewShadowedContainer;
+    this.imageviewLessonFour = imageviewLessonFour;
+    this.imageviewLessonOne = imageviewLessonOne;
+    this.imageviewLessonThree = imageviewLessonThree;
+    this.imageviewLessonTwo = imageviewLessonTwo;
     this.imageviewLessonZero = imageviewLessonZero;
     this.layoutHeaderContainer = layoutHeaderContainer;
     this.main = main;
+    this.textviewLessonFour = textviewLessonFour;
+    this.textviewLessonOne = textviewLessonOne;
+    this.textviewLessonThree = textviewLessonThree;
+    this.textviewLessonTwo = textviewLessonTwo;
     this.textviewLessonZero = textviewLessonZero;
   }
 
@@ -91,6 +145,30 @@ public final class ActivityInfraredCommunicationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.button_lesson_four;
+      ConstraintLayout buttonLessonFour = ViewBindings.findChildViewById(rootView, id);
+      if (buttonLessonFour == null) {
+        break missingId;
+      }
+
+      id = R.id.button_lesson_one;
+      ConstraintLayout buttonLessonOne = ViewBindings.findChildViewById(rootView, id);
+      if (buttonLessonOne == null) {
+        break missingId;
+      }
+
+      id = R.id.button_lesson_three;
+      ConstraintLayout buttonLessonThree = ViewBindings.findChildViewById(rootView, id);
+      if (buttonLessonThree == null) {
+        break missingId;
+      }
+
+      id = R.id.button_lesson_two;
+      ConstraintLayout buttonLessonTwo = ViewBindings.findChildViewById(rootView, id);
+      if (buttonLessonTwo == null) {
+        break missingId;
+      }
+
       id = R.id.button_lesson_zero;
       ConstraintLayout buttonLessonZero = ViewBindings.findChildViewById(rootView, id);
       if (buttonLessonZero == null) {
@@ -100,6 +178,30 @@ public final class ActivityInfraredCommunicationBinding implements ViewBinding {
       id = R.id.cardView_shadowed_container;
       CardView cardViewShadowedContainer = ViewBindings.findChildViewById(rootView, id);
       if (cardViewShadowedContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.imageview_lesson_four;
+      ImageView imageviewLessonFour = ViewBindings.findChildViewById(rootView, id);
+      if (imageviewLessonFour == null) {
+        break missingId;
+      }
+
+      id = R.id.imageview_lesson_one;
+      ImageView imageviewLessonOne = ViewBindings.findChildViewById(rootView, id);
+      if (imageviewLessonOne == null) {
+        break missingId;
+      }
+
+      id = R.id.imageview_lesson_three;
+      ImageView imageviewLessonThree = ViewBindings.findChildViewById(rootView, id);
+      if (imageviewLessonThree == null) {
+        break missingId;
+      }
+
+      id = R.id.imageview_lesson_two;
+      ImageView imageviewLessonTwo = ViewBindings.findChildViewById(rootView, id);
+      if (imageviewLessonTwo == null) {
         break missingId;
       }
 
@@ -117,6 +219,30 @@ public final class ActivityInfraredCommunicationBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.textview_lesson_four;
+      TextView textviewLessonFour = ViewBindings.findChildViewById(rootView, id);
+      if (textviewLessonFour == null) {
+        break missingId;
+      }
+
+      id = R.id.textview_lesson_one;
+      TextView textviewLessonOne = ViewBindings.findChildViewById(rootView, id);
+      if (textviewLessonOne == null) {
+        break missingId;
+      }
+
+      id = R.id.textview_lesson_three;
+      TextView textviewLessonThree = ViewBindings.findChildViewById(rootView, id);
+      if (textviewLessonThree == null) {
+        break missingId;
+      }
+
+      id = R.id.textview_lesson_two;
+      TextView textviewLessonTwo = ViewBindings.findChildViewById(rootView, id);
+      if (textviewLessonTwo == null) {
+        break missingId;
+      }
+
       id = R.id.textview_lesson_zero;
       TextView textviewLessonZero = ViewBindings.findChildViewById(rootView, id);
       if (textviewLessonZero == null) {
@@ -124,8 +250,10 @@ public final class ActivityInfraredCommunicationBinding implements ViewBinding {
       }
 
       return new ActivityInfraredCommunicationBinding((ConstraintLayout) rootView, buttonBack,
-          buttonLessonZero, cardViewShadowedContainer, imageviewLessonZero, layoutHeaderContainer,
-          main, textviewLessonZero);
+          buttonLessonFour, buttonLessonOne, buttonLessonThree, buttonLessonTwo, buttonLessonZero,
+          cardViewShadowedContainer, imageviewLessonFour, imageviewLessonOne, imageviewLessonThree,
+          imageviewLessonTwo, imageviewLessonZero, layoutHeaderContainer, main, textviewLessonFour,
+          textviewLessonOne, textviewLessonThree, textviewLessonTwo, textviewLessonZero);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -12,8 +12,8 @@
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_register.xml"
     },
     {
-        "merged": "com.example.androidLab.app-mergeDebugResources-39:/layout/activity_infrared_communication.xml",
-        "source": "com.example.androidLab.app-main-42:/layout/activity_infrared_communication.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_bluetooth_wireless_range.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_bluetooth_wireless_range.xml"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\dialog_history.xml",
@@ -22,6 +22,10 @@
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\dialog_submit.xml",
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\dialog_submit.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\dialog_lesson.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\dialog_lesson.xml"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_home.xml",
@@ -40,8 +44,12 @@
         "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_calculator.xml"
     },
     {
-        "merged": "com.example.androidLab.app-mergeDebugResources-39:/layout/activity_home.xml",
-        "source": "com.example.androidLab.app-main-42:/layout/activity_home.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_bluetooth_file_transfer.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_bluetooth_file_transfer.xml"
+    },
+    {
+        "merged": "com.example.androidLab.app-mergeDebugResources-39:/layout/dialog_lesson.xml",
+        "source": "com.example.androidLab.app-main-42:/layout/dialog_lesson.xml"
     },
     {
         "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_infrared_communication.xml",

@@ -89,14 +89,14 @@
                     app:layout_constraintStart_toStartOf="parent"
                     android:text="@string/text_infrared_communication"
                     tools:ignore="RtlSymmetry" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:padding="10dp"
                 android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/layout_header_container">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -108,6 +108,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:clickable="true"
+                        android:focusable="true"
                         android:paddingEnd="10dp"
                         android:background="@drawable/ic_ripple_solid_white"
                         app:layout_constraintTop_toTopOf="parent"
@@ -370,7 +371,7 @@
                             android:textColor="@color/black"
                             android:textAlignment="textStart"
                             android:fontFamily="@font/noto_sans_kr_bold"
-                            android:text="@string/title_ir_communication_advantages"
+                            android:text="@string/title_summary"
                             android:layout_marginStart="10dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"

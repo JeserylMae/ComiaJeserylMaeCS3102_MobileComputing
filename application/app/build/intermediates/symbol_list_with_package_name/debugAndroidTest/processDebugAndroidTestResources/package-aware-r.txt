@@ -1,3 +1,3 @@
-com.example.exercise2.test
+com.example.androidLab.test
 style WhiteBackgroundDialogTheme
 style WhiteBackgroundTheme

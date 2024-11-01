@@ -36,15 +36,17 @@
 
             <TextView
                 android:id="@+id/textview_title"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="TITLE"
                 android:fontFamily="@font/jua"
                 android:textSize="20sp"
+                android:paddingHorizontal="10dp"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 app:layout_constraintTop_toTopOf="@id/button_back"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintStart_toEndOf="@id/button_back"
                 />
 
             <TextView
@@ -52,8 +54,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:textSize="18sp"
+                android:textSize="13sp"
                 android:layout_marginTop="30dp"
+                android:maxLines="20"
+                android:scrollbars="vertical"
                 android:background="@drawable/ic_background_solid_pink"
                 android:fontFamily="@font/noto_sans_kr"
                 android:textColor="@color/beige"

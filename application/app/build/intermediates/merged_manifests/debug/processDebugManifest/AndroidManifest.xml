@@ -33,7 +33,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.Exercise2" >
         <activity
-            android:name="com.example.androidLab.InfraredCommunicationActivity"
+            android:name="com.example.androidLab.activty.BluetoothWirelessRangeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.androidLab.activty.BluetoothFileTransferActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.androidLab.activty.InfraredCommunicationActivity"
             android:exported="false" />
         <activity
             android:name="com.example.androidLab.activty.HomeActivity"

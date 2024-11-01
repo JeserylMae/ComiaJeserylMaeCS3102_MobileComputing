@@ -34,7 +34,7 @@
     <string name="don_t_have_an_account">Don\'t have an account?</string>
     <string name="cd_user_profile">View Profile</string>
     <string name="text_infrared_communication">Infrared Communication</string>
-    <string name="text_bluetooth_file_transfer">Bluetooth File Transfer</string>
+    <string name="text_bluetooth_file_transfer">Bluetooth File Transfer in Android</string>
     <string name="text_identifying_bluetooth">Identifying Bluetooth in Wireless Range</string>
     <string name="text_country_flag">Country\'s Flag Identifier</string>
     <string name="text_realtime_mc_services">Different Realtime Mobile Communicating Services</string>
@@ -245,11 +245,11 @@
         What is Infrared (IR)?
     </string>
     <string name="text_what_is_ir_communication">
-        <b>Infrared</b> is a type of electromagnetic radiation that\'s longer in wavelength than
+        Infrared is a type of electromagnetic radiation that\'s longer in wavelength than
         visible light but shorter than radio waves. It\'s commonly used in various technologies,
         including remote controls, thermal imaging, and communication systems.
         \n\n
-        <b>Infrared Wireless Communication</b> makes use of infrared waves in wireless technology
+        Infrared Wireless Communication makes use of infrared waves in wireless technology
         for digital data transfer.
     </string>
 
@@ -257,12 +257,12 @@
         Two Types of Infrared Communication
     </string>
     <string name="text_types_of_ir_communication">
-        <b>1. Point to Point:</b> It requires a line of sight between the transmitter and a
+        1. Point to Point: It requires a line of sight between the transmitter and a
         receiver. In other words the transmitter and the receiver should be pointed to each other
         and there shouldn’t be any obstacles between them. Example is the remote control
         communication.
-        \n
-        <b>2. Diffuse Point:</b> It doesn’t require any line of sight and the link between the
+        \n\n
+        2. Diffuse Point: It doesn’t require any line of sight and the link between the
         transmitter and the receiver is maintained by reflecting or bouncing of the transmitted
         signal by surfaces like ceilings, roof, etc. Example is the wireless LAN communication
         system.
@@ -303,14 +303,14 @@
         Advantages of IR communication
     </string>
     <string name="text_ir_communication_advantage">
-        <b>1. Security:</b> Infrared communication has high directionality and can identify the
+        1. Security: Infrared communication has high directionality and can identify the
         source as different sources emit radiation of different frequencies and thus the risk of
         information being diffused is eliminated.
         \n\n
-        <b>2. Safety:</b> Infrared radiation is not harmful to human beings. Hence infrared
+        2. Safety: Infrared radiation is not harmful to human beings. Hence infrared
         communication can be used at any place.
         \n\n
-        <b>3. High Speed data Communication: </b> The data rate of Infrared communication is about
+        3. High Speed data Communication: The data rate of Infrared communication is about
         1Gbps and can be used for sending information like video signal.
     </string>
 
@@ -320,7 +320,7 @@
         method easy to implement, even when using slow microcontrollers. The sender has to pulse
         the LED on and off to transmit data because many other objects emit IR radiation.
         Otherwise, the receiver wouldn’t be able to differentiate between actual messages and noise.
-
+        \n\n
         The NEC protocol uses pulse distance encoding to distinguish between logic states in
         transmitted messages. The message itself consists of a synchronization sequence, typically
         followed by an eight-bit address and command. The RC5 protocol uses Manchester encoding to
@@ -330,5 +330,518 @@
     </string>
 
 
+    <!-- BLUETOOTH FILE TRANSFER -->
+    <string name="title_bluetooth_overview">
+        Bluetooth Overview
+    </string>
+    <string name="text_bluetooth_overview">
+        The Android platform includes support for the Bluetooth network stack, which allows a
+        device to wirelessly exchange data with other Bluetooth devices. The app framework provides
+        access to the Bluetooth functionality through Bluetooth APIs. These APIs let apps connect
+        to other Bluetooth devices, enabling point-to-point and multipoint wireless features.
+        \n\n
+        Using the Bluetooth APIs, an app can perform the following:
+        \n\n
+        1. Scan for other Bluetooth devices.
+        \n
+        2. Query the local Bluetooth adapter for paired Bluetooth devices.
+        \n
+        3. Establish RFCOMM channels.
+        \n
+        4. Connect to other devices through service discovery.
+        \n
+        5. Transfer data to and from other devices.
+        \n
+        6. Manage multiple connections.
+    </string>
 
+    <string name="title_bluetooth_basics">
+        Bluetooth Basics
+    </string>
+    <string name="text_bluetooth_basics">
+        For Bluetooth-enabled devices to transmit data between each other, they must first form a
+        channel of communication using a pairing process. One device, a discoverable device, makes
+        itself available for incoming connection requests. Another device finds the discoverable
+        device using a service discovery process. After the discoverable device accepts the pairing
+        request, the two devices complete a bonding process in which they exchange security keys.
+        The devices cache these keys for later use. After the pairing and bonding processes are
+        complete, the two devices exchange information. When the session is complete, the device
+        that initiated the pairing request releases the channel that had linked it to the
+        discoverable device. The two devices remain bonded, however, so they can reconnect
+        automatically during a future session as long as they\'re in range of each other and
+        neither device has removed the bond.
+        \n\n
+        Use of the Bluetooth APIs requires declaring several permissions in your manifest file.
+        Once your app has permission to use Bluetooth, your app needs to access the
+        BluetoothAdapter and determine if Bluetooth is available on the device. If Bluetooth is
+        available, there are three steps to make a connection:
+        \n\n
+        1. Find nearby Bluetooth devices, either devices that are already paired or new ones.
+        \n
+        2. Connect to a Bluetooth device.
+        \n
+        3. Transfer data with the connected device.
+        \n
+        4. Certain devices use a specific Bluetooth profile that declares the data it provides.
+    </string>
+
+
+    <string name="title_bluetooth_interfaces_classes_1">
+    Key Interfaces and Classes \nPart 1
+    </string>
+    <string name="text_bluetooth_interfaces_classes_1">
+        All of the Bluetooth APIs are available in the android.bluetooth package. The following
+        are the classes and interfaces you need in order to create Bluetooth connections:
+        \n\n
+        1. BluetoothAdapter
+        \n
+        Represents the local Bluetooth adapter (Bluetooth radio). The BluetoothAdapter is the
+        entry-point for all Bluetooth interaction. Using this, you can discover other Bluetooth
+        devices, query a list of bonded (paired) devices, instantiate a BluetoothDevice using a
+        known MAC address, and create a BluetoothServerSocket to listen for communications from
+        other devices.
+        \n\n
+        2. BluetoothDevice
+        \n
+        Represents a remote Bluetooth device. Use this to request a connection with a remote device
+        through a BluetoothSocket or query information about the device such as its name, address,
+        class, and bonding state.
+        \n\n
+        3. BluetoothSocket
+        \n
+        Represents the interface for a Bluetooth socket (similar to a TCP Socket). This is the
+        connection point that allows an app to exchange data with another Bluetooth device using
+        InputStream and OutputStream.
+        \n\n
+        4. BluetoothServerSocket
+        \n
+        Represents an open server socket that listens for incoming requests (similar to a TCP
+        ServerSocket). In order to connect two devices, one device must open a server socket with
+        this class. When a remote Bluetooth device makes a connection request to this device, the
+        device accepts the connection and then returns a connected BluetoothSocket.
+        \n\n
+        5. BluetoothClass
+        \n
+        Describes the general characteristics and capabilities of a Bluetooth device. This is a
+        read-only set of properties that defines the device\'s classes and services. Although this
+        information provides a useful hint regarding a device\'s type, the attributes of this class
+        don\'t necessarily describe all Bluetooth profiles and services that the device supports.
+        \n\n
+        6. BluetoothProfile
+        \n
+        An interface that represents a Bluetooth profile. A Bluetooth profile is a wireless
+        interface specification for Bluetooth-based communication between devices. An example is
+        the Hands-Free profile. For more discussion of profiles, see Bluetooth profiles.
+    </string>
+
+
+    <string name="title_bluetooth_interfaces_classes_2">
+    Key Interfaces and Classes \nPart 2
+    </string>
+    <string name="text_bluetooth_interfaces_classes_2">
+        All of the Bluetooth APIs are available in the android.bluetooth package. The following
+        are the classes and interfaces you need in order to create Bluetooth connections:
+        \n\n
+        1. BluetoothHeadset
+        \n
+        Provides support for Bluetooth headsets to be used with mobile phones. This includes both
+        the Bluetooth Headset profile and the Hands-Free (v1.5) profile.
+        \n\n
+        2. BluetoothA2dp
+        \n
+        Defines how high-quality audio can be streamed from one device to another over a Bluetooth
+        connection using the Advanced Audio Distribution Profile (A2DP).
+        \n\n
+        3. BluetoothHealth
+        \n
+        Represents a Health Device Profile proxy that controls the Bluetooth service.
+        \n\n
+        4. BluetoothHealthCallback
+        \n
+        An abstract class that you use to implement BluetoothHealth callbacks. You must extend
+        this class and implement the callback methods to receive updates about changes in the app’s
+        registration state and Bluetooth channel state.
+        \n\n
+        5. BluetoothHealthAppConfiguration
+        \n
+        Represents an app configuration that the Bluetooth Health third-party app registers to
+        communicate with a remote Bluetooth health device.
+        \n\n
+        6. BluetoothProfile.ServiceListener
+        \n
+        An interface that notifies BluetoothProfile interprocess communication (IPC) clients when
+        they have been connected to or disconnected from the internal service that runs a
+        particular profile.
+    </string>
+
+
+    <string name="text_bluetooth_transfer_summary">
+        The Android platform includes Bluetooth support, allowing wireless data exchange between
+        devices via Bluetooth APIs. Using these APIs, an app can scan for Bluetooth devices,
+        connect, manage multiple connections, and transfer data between devices. Android primarily
+        supports Classic Bluetooth for more battery-intensive operations and Bluetooth Low Energy
+        (BLE) for devices needing low power.
+        \n\n
+        Bluetooth on Android involves:
+        \n
+        1. Setting up Bluetooth: Requires checking for Bluetooth availability via BluetoothAdapter
+        and requesting necessary permissions.
+        \n
+        2. Finding devices: Searching for nearby devices, both paired and new.
+        \n
+        3. Connecting devices: Initiating connections through pairing and bonding processes,
+        enabling automatic reconnections when in range.
+        \n
+        4. Transferring data: Exchanging data over established connections.
+        \n\n
+        Key Bluetooth Classes:
+        \n
+        1. BluetoothAdapter: Entry point for Bluetooth actions, managing device discovery and
+        connection initiation.
+        \n
+        2. BluetoothDevice: Represents other Bluetooth devices, enabling connections and
+        information retrieval.
+        \n
+        3. BluetoothSocket: Interface for data exchange between devices.
+        \n
+        4. BluetoothServerSocket: Allows a device to accept incoming connection requests.
+        \n
+        5. BluetoothClass and BluetoothProfile: Provide information on device capabilities and
+        supported profiles, including BluetoothHeadset, BluetoothA2dp (audio streaming), and
+        BluetoothHealth (for health devices).
+        \n
+        6. These elements work together to enable a wide range of Bluetooth-based interactions,
+        from simple device pairing to complex profile-specific applications like health and audio
+        streaming.
+    </string>
+
+    <!-- IDENTIFYING BLUETOOTH IN WIRELESS RANGE -->
+    <string name="title_setup_bluetooth">
+        Set Up Bluetooth
+    </string>
+    <string name="text_setup_bluetooth">
+        Before your app can communicate over Bluetooth or Bluetooth Low Energy, you need to verify
+        that Bluetooth is supported on the device, and if it is, ensure that it is enabled. Note
+        that this check is only necessary if the android:required attribute in the
+        &lt;uses-feature…&#91;&gt; manifest file entry is set to false.
+        \n\n
+        If Bluetooth isn\'t supported, then you should gracefully disable any Bluetooth features.
+        If Bluetooth is supported, but disabled, then you can request that the user enable
+        Bluetooth without leaving your app.
+        \n\n
+        The first step is adding the Bluetooth permissions to your manifest file in order to use
+        the following APIs.
+        \n\n
+        Once the permissions are in place, Bluetooth setup is accomplished in two steps using the
+        BluetoothAdapter:
+        \n\n
+        1. Get the BluetoothAdapter.
+        \n
+        The BluetoothAdapter is required for any and all Bluetooth activity. The BluetoothAdapter
+        represents the device\'s own Bluetooth adapter (the Bluetooth radio). To get a
+        BluetoothAdapter, you first need to have a Context. Use this context to obtain an instance
+        of the BluetoothManager system service. Calling BluetoothManager#getAdapter will give you
+        a BluetoothAdapter object. If getAdapter() returns null, then the device doesn\'t support
+        Bluetooth.
+        \n\n
+        2. Enable Bluetooth.
+        \n
+        Next, you need to ensure that Bluetooth is enabled. Call isEnabled() to check whether Bluetooth
+        is currently enabled. If this method returns false, then Bluetooth is disabled. To request
+        that Bluetooth be enabled, call startActivityForResult(), passing in an ACTION_REQUEST_ENABLE
+        intent action. This call issues a request to enable Bluetooth through the system settings
+        (without stopping your app).
+        \n\n
+        A dialog appears requesting user permission to enable Bluetooth, as shown in figure 1. If
+        the user grants permission, the system begins to enable Bluetooth, and focus returns to
+        your app once the process completes (or fails).
+        \n\n
+        The REQUEST_ENABLE_BT constant passed to startActivityForResult() is a locally-defined
+        integer that must be greater than or equal to 0. The system passes this constant back to
+        you in your onActivityResult() implementation as the requestCode parameter.
+        \n\n
+        If enabling Bluetooth succeeds, your activity receives the RESULT_OK result code in the
+        onActivityResult() callback. If Bluetooth was not enabled due to an error (or the user
+        responded "Deny") then the result code is RESULT_CANCELED.
+        \n\n
+        Optionally, your app can also listen for the ACTION_STATE_CHANGED broadcast intent, which
+        the system broadcasts whenever the Bluetooth state changes. This broadcast contains the
+        extra fields EXTRA_STATE and EXTRA_PREVIOUS_STATE, containing the new and old Bluetooth
+        states, respectively. Possible values for these extra fields are STATE_TURNING_ON, STATE_ON,
+        STATE_TURNING_OFF, and STATE_OFF. Listening for this broadcast can be useful if your app
+        needs to detect runtime changes made to the Bluetooth state.
+        \n\n
+        Once Bluetooth is enabled on the device, you can use both Bluetooth classic and Bluetooth 
+        Low Energy.
+        \n\n
+        For Bluetooth classic, you can find Bluetooth devices and connect to Bluetooth devices.
+        \n\n
+        For Bluetooth Low Energy, you can find BLE devices, connect to a GATT server, and transfer 
+        BLE data.
+    </string>
+
+    <string name="title_find_bluetooth_devices">
+        Find Bluetooth devices
+    </string>
+    <string name="text_find_bluetooth_devices">
+        Using the BluetoothAdapter, you can find remote Bluetooth devices either through device
+        discovery or by querying the list of paired devices.
+        \n\n
+        Make sure you have the appropriate Bluetooth permissions and set up your app for Bluetooth
+        before attempting to find Bluetooth devices.
+        \n\n
+        Device discovery is a scanning procedure that searches the local area for Bluetooth-enabled
+        devices and requests some information about each one. This process is sometimes referred to
+        as discovering, inquiring, or scanning. A nearby Bluetooth device responds to a discovery
+        request only if it is currently accepting information requests by being discoverable. If a
+        device is discoverable, it responds to the discovery request by sharing some information,
+        such as the device\'s name, its class, and its unique MAC address. Using this information,
+        the device that is performing the discovery process can then choose to initiate a
+        connection to the discovered device.
+        \n\n
+        Because discoverable devices might reveal information about the user\'s location, the device
+        discovery process requires location access. If your app is being used on a device that runs
+        Android 8.0 (API level 26) or higher, consider using the Companion Device Manager API
+        instead. This API performs device discovery on your app\'s behalf, so your app doesn\'t
+        need to request location permissions.
+        \n\n
+        Once a connection is made with a remote device for the first time, a pairing request is
+        automatically presented to the user. When a device is paired, the basic information about
+        that device—such as the device\'s name, class, and MAC address—is saved and can be read
+        using the Bluetooth APIs. Using the known MAC address for a remote device, a connection
+        can be initiated with it at any time without performing discovery, assuming the device
+        is still within range.
+        \n\n
+        Note that there is a difference between being paired and being connected:
+        \n\n
+        To be paired means that two devices are aware of each other\'s existence, have a shared
+        link-key that can be used for authentication, and are capable of establishing an encrypted
+        connection with each other.
+        \n\n
+        To be connected means that the devices currently share an RFCOMM channel and are able to
+        transmit data with each other. The current Bluetooth APIs require devices to be paired
+        before an RFCOMM connection can be established. Pairing is automatically performed when
+        you initiate an encrypted connection with the Bluetooth APIs.
+        \n\n\n
+        Query paired devices
+        \n
+        Before performing device discovery, it\'s worth querying the set of paired devices to see
+        if the desired device is already known. To do so, call getBondedDevices(). This returns a
+        set of BluetoothDevice objects representing paired devices.
+        \n\n
+        To initiate a connection with a Bluetooth device, all that\'s needed from the associated
+        BluetoothDevice object is the MAC address, which you retrieve by calling getAddress().
+        You can learn more about creating a connection in Connect Bluetooth devices.
+        \n\n\n
+        Discover devices
+        \n
+        To start discovering devices, call startDiscovery(). The process is asynchronous and
+        returns a boolean value indicating whether discovery has successfully started. The
+        discovery process usually involves an inquiry scan of about 12 seconds, followed by
+        a page scan of each device found to retrieve its Bluetooth name.
+        \n
+        To receive information about each device discovered, your app must register a
+        BroadcastReceiver for the ACTION_FOUND intent. The system broadcasts this intent
+        for each device. The intent contains the extra fields EXTRA_DEVICE and EXTRA_CLASS,
+        which in turn contain a BluetoothDevice and a BluetoothClass, respectively.
+        \n\n\n
+        Enable discoverability
+        \n
+        To make the local device discoverable to other devices, call startActivityForResult(Intent, int)
+        with the ACTION_REQUEST_DISCOVERABLE intent. This issues a request to enable the system\'s
+        discoverable mode without having to navigate to the Settings app, which would stop your own
+        app. By default, the device becomes discoverable for two minutes. You can define a different
+        duration, up to one hour, by adding the EXTRA_DISCOVERABLE_DURATION extra.
+    </string>
+
+    <string name="title_connect_bluetooth_devices">
+        Connect Bluetooth devices
+    </string>
+    <string name="text_connect_bluetooth_devices">
+        To create a connection between two devices, you must implement both the server-side and
+        client-side mechanisms because one device must open a server socket, and the other one
+        must initiate the connection using the server device\'s MAC address. The server device
+        and the client device each obtain the required BluetoothSocket in different ways. The
+        server receives socket information when an incoming connection is accepted. The client
+        provides socket information when it opens an RFCOMM channel to the server.
+        \n\n
+        The server and client are considered connected to each other when they each have a
+        connected BluetoothSocket on the same RFCOMM channel. At this point, each device can
+        obtain input and output streams, and data transfer can begin, which is discussed in the
+        section about transferring Bluetooth data. This section describes how to initiate the
+        connection between two devices.
+        \n\n
+        Make sure you have the appropriate Bluetooth permissions and set up your app for Bluetooth
+        before attempting to find Bluetooth devices.
+        \n\n\n
+        Different Connection techniques
+        \n\n
+        Technique #1. Connect As Server
+        \n\n
+        To connect two devices using Bluetooth, one device must function as a server by holding an
+        open BluetoothServerSocket. This server socket listens for incoming connection requests and
+        provides a connected BluetoothSocket once a request is accepted. Here\'s how to set up the
+        server:
+        \n\n
+        1. Create a BluetoothServerSocket: Use listenUsingRfcommWithServiceRecord(String, UUID) to
+        obtain a server socket. The string is an identifiable service name (often your app name)
+        that gets written to the Service Discovery Protocol (SDP) database. The UUID uniquely
+        identifies the service and must match the UUID used by the client device for a successful
+        connection.
+        \n\n
+        2. Listen for Connections: Call accept() on the server socket to start listening for
+        connection requests. This is a blocking call and will return only when a connection is
+        accepted or an exception occurs.
+        \n\n
+        3. Close the Server Socket: After accepting a connection, call close() on the
+        BluetoothServerSocket to release its resources. Note that this does not close the
+        connected BluetoothSocket. Since RFCOMM allows only one connected client per channel,
+        closing the server socket after acceptance is typically appropriate.
+        \n\n
+        4. Thread Management: Do not run the accept() call on the main UI thread as it blocks
+        execution. Instead, manage Bluetooth operations in a separate thread to keep the app
+        responsive. If necessary, you can abort a blocked accept() call by invoking close()
+        from another thread.
+        \n\n
+        All methods on BluetoothServerSocket and BluetoothSocket are thread-safe, ensuring safe
+        operations across multiple threads.
+        \n\n\n
+        Technique #2. Connect As A Client
+        \n\n
+        In order to initiate a connection with a remote device that is accepting connections on an
+        open server socket, you must first obtain a BluetoothDevice object that represents the
+        remote device. To learn how to create a BluetoothDevice, see Find Bluetooth devices. You
+        must then use the BluetoothDevice to acquire a BluetoothSocket and initiate the connection.
+        \n\n
+        The basic procedure is as follows:
+        \n\n
+        Using the BluetoothDevice, get a BluetoothSocket by calling
+        createRfcommSocketToServiceRecord(UUID).
+        \n\n
+        This method initializes a BluetoothSocket object that allows the client to connect to a
+        BluetoothDevice. The UUID passed here must match the UUID used by the server device when
+        it called listenUsingRfcommWithServiceRecord(String, UUID) to open its BluetoothServerSocket.
+        To use a matching UUID, hard-code the UUID string into your app, and then reference it from
+        both the server and client code.
+        \n\n
+        Initiate the connection by calling connect(). Note that this method is a blocking call.
+        \n\n
+        After a client calls this method, the system performs an SDP lookup to find the remote
+        device with the matching UUID. If the lookup is successful and the remote device accepts
+        the connection, it shares the RFCOMM channel to use during the connection, and the
+        connect() method returns. If the connection fails, or if the connect() method times out
+        (after about 12 seconds), then the method throws an IOException.
+        \n\n
+        Because connect() is a blocking call, you should always perform this connection procedure
+        in a thread that is separate from the main activity (UI) thread.
+    </string>
+
+    <string name="title_transfer_bluetooth_data">
+        Transfer Bluetooth Data
+    </string>
+    <string name="text_transfer_bluetooth_data">
+        After you have successfully connected to a Bluetooth device, each one has a connected
+        BluetoothSocket. You can now share information between devices. Using the BluetoothSocket,
+        the general procedure to transfer data is as follows:
+        \n\n
+        Get the InputStream and OutputStream that handle transmissions through the socket using
+        getInputStream() and getOutputStream(), respectively.
+        \n\n
+        Read and write data to the streams using read(byte[]) and write(byte[]).
+        \n\n
+        There are, of course, implementation details to consider. In particular, you should use a
+        dedicated thread for reading from the stream and writing to it. This is important because
+        both the read(byte[]) and write(byte[]) methods are blocking calls. The read(byte[]) method
+        blocks until there is something to read from the stream. The write(byte[]) method doesn\'t
+        usually block, but it can block for flow control if the remote device isn\'t calling
+        read(byte[]) quickly enough and the intermediate buffers become full as a result. So, you
+        should dedicate your main loop in the thread to reading from the InputStream. You can use
+        a separate public method in the thread to initiate writes to the OutputStream.
+        \n\n
+        After the constructor acquires the necessary streams, the thread waits for data to come
+        through the InputStream. When read(byte[]) returns with data from the stream, the data is
+        sent to the main activity using a member Handler from the parent class. The thread then
+        waits for more bytes to be read from the InputStream.
+        \n\n
+        To send outgoing data, you call the thread\'s write() method from the main activity and pass
+        in the bytes to be sent. This method calls write(byte[]) to send the data to the remote
+        device. If an IOException is thrown when calling write(byte[]), the thread sends a toast to
+        the main activity, explaining to the user that the device couldn\'t send the given bytes to
+        the other (connected) device.
+        \n\n
+        The thread\'s cancel() method allows you to terminate the connection at any time by closing
+        the BluetoothSocket. Always call this method when you\'re done using the Bluetooth
+        connection.
+    </string>
+
+    <string name="title_bluetooth_profiles">
+        Bluetooth Profiles
+    </string>
+    <string name="text_bluetooth_profiles">
+        The Bluetooth API includes support for working with Bluetooth profiles. A Bluetooth
+        profile is a wireless interface specification for Bluetooth-based communication between
+        devices, such as the Hands-Free profile. For a mobile device to connect to a wireless
+        headset, both devices must support the Hands-Free profile.
+        \n\n
+        The Bluetooth API provides implementations for the following Bluetooth profiles:
+        \n\n
+        1. Headset. The Headset profile provides support for Bluetooth headsets to be used with mobile
+        phones. Android provides the BluetoothHeadset class, which is a proxy for controlling the
+        Bluetooth Headset Service. This includes both Bluetooth Headset and Hands-Free (v1.5)
+        profiles. The BluetoothHeadset class includes support for AT commands. For more on this
+        topic, see Vendor-specific AT commands.
+        \n\n
+        2. A2DP. The Advanced Audio Distribution Profile (A2DP) profile defines how high-quality
+        audio can be streamed from one device to another over a Bluetooth connection. Android
+        provides the BluetoothA2dp class, which is a proxy for controlling the Bluetooth A2DP
+        Service.
+        \n\n
+        3. Health Device. Android provides support for the Bluetooth Health Device Profile (HDP).
+        This lets you create apps that use Bluetooth to communicate with health devices that
+        support Bluetooth, such as heart-rate monitors, blood meters, thermometers, scales,
+        and so on. For a list of supported devices and their corresponding device data
+        specialization codes, see Bluetooth\'s HDP Device Data Specializations. These values
+        are also referenced in the ISO/IEEE 11073-20601 [7] specification as MDC_DEV_SPEC_PROFILE_*
+        in the Nomenclature Codes Annex. For more information about HDP, see Health Device Profile.
+        \n\n
+        Here are the basic steps for working with a profile:
+        \n\n
+        1. Get the default adapter, as described in Bluetooth setup.
+        \n
+        2. Set up a BluetoothProfile.ServiceListener. This listener notifies BluetoothProfile clients
+        when they have been connected to or disconnected from the service.
+        \n
+        3. Use getProfileProxy() to establish a connection to the profile proxy object associated with
+        the profile. In the following example, the profile proxy object is an instance of
+        BluetoothHeadset.
+        \n
+        4. In onServiceConnected(), get a handle to the profile proxy object.
+        \n
+        5. Once you have the profile proxy object, use it to monitor the state of the connection and
+        perform other operations that are relevant to that profile.
+    </string>
+
+    <string name="title_company_device_pairing">
+        Set Up Companion Device
+    </string>
+    <string name="text_companion_device_pairing">
+        On devices running Android 8.0 (API level 26) and higher, companion device pairing performs
+        a Bluetooth or Wi-Fi scan of nearby devices on behalf of your app without requiring the
+        ACCESS_FINE_LOCATION permission. This helps maximize user privacy protections. Use this
+        method to perform the initial configuration of the companion device, such as a BLE-capable
+        smart watch. In addition, companion device pairing requires Location Services to be enabled.
+        \n\n
+        Companion device pairing doesn\'t create connections on its own nor enable continuous
+        scanning. Apps can use Bluetooth or Wi-Fi connectivity APIs to establish connections.
+        \n\n
+        After the device is paired, the device can use the REQUEST_COMPANION_RUN_IN_BACKGROUND and
+        REQUEST_COMPANION_USE_DATA_IN_BACKGROUND permissions to start the app from background.
+        Apps can also use REQUEST_COMPANION_START_FOREGROUND_SERVICES_FROM_BACKGROUND permission
+        to start a foreground service from background.
+        \n\n
+        A user can select a device from a list and grant the app permissions to access the device.
+        These permissions are revoked if you uninstall the app or call disassociate(). The
+        companion app is responsible for clearing its own associations if the user no longer
+        needs them, such as when they log out or remove bound devices.
+    </string>
 </resources>
