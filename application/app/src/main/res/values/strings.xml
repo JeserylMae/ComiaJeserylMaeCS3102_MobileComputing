@@ -36,7 +36,7 @@
     <string name="text_infrared_communication">Infrared Communication</string>
     <string name="text_bluetooth_file_transfer">Bluetooth File Transfer in Android</string>
     <string name="text_identifying_bluetooth">Identifying Bluetooth in Wireless Range</string>
-    <string name="text_country_flag">Country\'s Flag Identifier</string>
+    <string name="text_country_flag">What\'s The Flag?</string>
     <string name="text_realtime_mc_services">Different Realtime Mobile Communicating Services</string>
     <string name="text_home_header_tagline">Explore different \ncourses and \napplications in \nAndroid Lab</string>
     <string name="text_applications">Applications</string>
@@ -44,7 +44,8 @@
     <string name="cd_back_button">Back</string>
     <string name="text_difficulty_easy">Difficulty: Easy</string>
     <string name="title_summary">Summary</string>
-
+    <string name="text_select_country">Select Country</string>
+    <string name="text_get_flag">Get Flag!</string>
 
     <string name="calculator_sign">Calculator</string>
     <string name="zero">0</string>
@@ -69,6 +70,20 @@
     <string name="clear_all">C</string>
     <string name="cd_history">History</string>
     <string name="cd_backspace">Backspace</string>
+
+
+    <string-array name="array_country_dropdown">
+        <item>Bolivia</item>
+        <item>Cambodia</item>
+        <item>China</item>
+        <item>Germany</item>
+        <item>Japan</item>
+        <item>Mexico</item>
+        <item>Philippines</item>
+        <item>South Korea</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+    </string-array>
 
     <string-array name="array_region_dropdown">
         <item>Region I - Ilocos Region</item>

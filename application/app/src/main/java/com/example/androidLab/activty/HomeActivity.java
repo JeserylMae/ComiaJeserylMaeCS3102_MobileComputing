@@ -41,6 +41,7 @@ public class HomeActivity extends AppCompatActivity {
         setUsername();
         binding.buttonLogout.setOnTouchListener(this::onLogoutButtonClicked);
         binding.buttonOpenCalculator.setOnClickListener(this::onOpenCalculatorClicked);
+        binding.buttonCountryFlag.setOnClickListener(this::onOpenCountryFlageButtonClicked);
         binding.buttonInfraredCommunication.setOnClickListener(this::onOpenIrCommClicked);
         binding.buttonBluetoothTransfer.setOnClickListener(this::onOpenBluetoothFileTransferButtonClicked);
         binding.buttonBluetoothWireless.setOnClickListener(this::onOpenBluetoothWirelessRangeButtonClicked);
@@ -72,6 +73,14 @@ public class HomeActivity extends AppCompatActivity {
             CalculatorActivity.class
         );
         startActivity(Calculator);
+    }
+
+    private void onOpenCountryFlageButtonClicked(View v) {
+        Intent CountryFlag = new Intent(
+            HomeActivity.this,
+            WhatsTheFlagActivity.class
+        );
+        startActivity(CountryFlag);
     }
 
     private void onOpenIrCommClicked(View v) {
