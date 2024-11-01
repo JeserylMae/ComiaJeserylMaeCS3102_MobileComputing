@@ -42,6 +42,8 @@ public class HomeActivity extends AppCompatActivity {
         binding.buttonLogout.setOnTouchListener(this::onLogoutButtonClicked);
         binding.buttonOpenCalculator.setOnClickListener(this::onOpenCalculatorClicked);
         binding.buttonInfraredCommunication.setOnClickListener(this::onOpenIrCommClicked);
+        binding.buttonBluetoothTransfer.setOnClickListener(this::onOpenBluetoothFileTransferButtonClicked);
+        binding.buttonBluetoothWireless.setOnClickListener(this::onOpenBluetoothWirelessRangeButtonClicked);
     }
 
     private void setUsername() {
@@ -72,11 +74,27 @@ public class HomeActivity extends AppCompatActivity {
         startActivity(Calculator);
     }
 
-    private void onOpenIrCommClicked(View view) {
+    private void onOpenIrCommClicked(View v) {
         Intent IrComm = new Intent(
             HomeActivity.this,
             InfraredCommunicationActivity.class
         );
         startActivity(IrComm);
+    }
+
+    private void onOpenBluetoothFileTransferButtonClicked(View v) {
+        Intent BluetoothFT = new Intent(
+            HomeActivity.this,
+            BluetoothFileTransferActivity.class
+        );
+        startActivity(BluetoothFT);
+    }
+
+    private void onOpenBluetoothWirelessRangeButtonClicked(View v) {
+        Intent BluetoothWR = new Intent(
+            HomeActivity.this,
+            BluetoothWirelessRangeActivity.class
+        );
+        startActivity(BluetoothWR);
     }
 }
