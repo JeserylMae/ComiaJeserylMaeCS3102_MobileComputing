@@ -57,6 +57,11 @@ dependencies {
     implementation(libs.material.v121)
     // For implementation 'net.objecthunter:exp4j:0.4.8'
     implementation(libs.exp4j)
+    implementation(libs.squareup.retrofit) // Retrofit
+    implementation(libs.converter.gson) // Gson converter
+    implementation(libs.okhttp3.logging.interceptor)
+    implementation(libs.com.github.bumptech.glide.glide)
+    annotationProcessor(libs.compiler)
 
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -64,6 +69,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
+    implementation(libs.firebase.crashlytics.buildtools)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

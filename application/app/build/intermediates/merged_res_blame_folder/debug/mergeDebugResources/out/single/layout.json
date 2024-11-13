@@ -1,58 +1,66 @@
 [
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\dialog_country_dropdown.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\dialog_country_dropdown.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\dialog_history_item.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\dialog_history_item.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\dialog_lesson.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\dialog_lesson.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_register.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_register.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_home.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_home.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_bluetooth_wireless_range.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_bluetooth_wireless_range.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\dialog_submit.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\dialog_submit.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\dialog_history.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\dialog_history.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_whats_the_flag.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_whats_the_flag.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\dialog_submit.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\dialog_submit.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\dialog_history_item.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\dialog_history_item.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\dialog_lesson.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\dialog_lesson.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_infrared_communication.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_infrared_communication.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_home.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_home.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_bluetooth_file_transfer.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_bluetooth_file_transfer.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_login.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_rt_mc_services.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_rt_mc_services.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_calculator.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_calculator.xml"
+        "merged": "com.example.androidLab.app-mergeDebugResources-40:/layout/activity_whats_the_flag.xml",
+        "source": "com.example.androidLab.app-main-43:/layout/activity_whats_the_flag.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_bluetooth_file_transfer.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_bluetooth_file_transfer.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_bluetooth_wireless_range.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_bluetooth_wireless_range.xml"
     },
     {
-        "merged": "com.example.androidLab.app-mergeDebugResources-39:/layout/dialog_lesson.xml",
-        "source": "com.example.androidLab.app-main-42:/layout/dialog_lesson.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\dialog_country_dropdown.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\dialog_country_dropdown.xml"
     },
     {
-        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-39:\\layout\\activity_infrared_communication.xml",
-        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-42:\\layout\\activity_infrared_communication.xml"
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\dialog_history.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\dialog_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-mergeDebugResources-40:\\layout\\activity_calculator.xml",
+        "source": "C:\\Users\\jesay\\.gradle\\daemon\\8.7\\com.example.androidLab.app-main-43:\\layout\\activity_calculator.xml"
     }
 ]

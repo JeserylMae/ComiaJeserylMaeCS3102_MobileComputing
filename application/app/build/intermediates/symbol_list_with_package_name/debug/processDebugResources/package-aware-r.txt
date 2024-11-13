@@ -77,6 +77,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array array_country_dropdown
 array array_region_barmm_dropdown
 array array_region_car_dropdown
 array array_region_dropdown
@@ -3082,6 +3083,7 @@ drawable ic_arrow_back_black_24
 drawable ic_background_gradient
 drawable ic_background_outlined_beige_parallel_corner
 drawable ic_background_outlined_maroon
+drawable ic_background_outlined_maroon_parallel_corner
 drawable ic_background_outlined_pink
 drawable ic_background_outlined_pink_solid_beige
 drawable ic_background_solid_beige_large
@@ -3100,6 +3102,7 @@ drawable ic_clock_black_24dp
 drawable ic_image_animated_robot
 drawable ic_image_bluetooth_transfer
 drawable ic_image_country_flag
+drawable ic_image_country_flag_2
 drawable ic_image_file_transfer
 drawable ic_image_five
 drawable ic_image_four
@@ -3340,6 +3343,7 @@ id button_eight
 id button_equal
 id button_five
 id button_four
+id button_get_flag
 id button_goto_signup
 id button_history
 id button_infrared_communication
@@ -3447,6 +3451,7 @@ id dropdown_province
 id dropdown_province_container
 id dropdown_region
 id dropdown_region_container
+id dropdown_select_country
 id easeIn
 id easeInOut
 id easeOut
@@ -3492,6 +3497,7 @@ id frost
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3514,6 +3520,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView_robot_gif
+id image_flag_holder
 id imageview_lesson_five
 id imageview_lesson_four
 id imageview_lesson_one
@@ -3783,13 +3790,18 @@ id textinput_suffix_text
 id textview_applications
 id textview_courses
 id textview_greeting_holder
+id textview_intro
+id textview_intro_content
 id textview_lesson_five
 id textview_lesson_four
 id textview_lesson_one
 id textview_lesson_three
 id textview_lesson_two
 id textview_lesson_zero
+id textview_text_body
 id textview_title
+id textview_title_body
+id textview_title_conclusion
 id time
 id title
 id titleDividerNoCustom
@@ -3957,6 +3969,8 @@ layout activity_infrared_communication
 layout activity_login
 layout activity_main
 layout activity_register
+layout activity_rt_mc_services
+layout activity_whats_the_flag
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -4297,6 +4311,7 @@ string text_email_label
 string text_female_rb
 string text_find_bluetooth_devices
 string text_gender_label
+string text_get_flag
 string text_greeting_hello
 string text_greeting_hello_1
 string text_greeting_welcome
@@ -4314,8 +4329,16 @@ string text_name_label
 string text_owner_name
 string text_password_label
 string text_phone_number_label
+string text_realtime_mc_body
+string text_realtime_mc_body_0
+string text_realtime_mc_body_1
+string text_realtime_mc_body_2
+string text_realtime_mc_body_3
+string text_realtime_mc_conclusion
+string text_realtime_mc_intro
 string text_realtime_mc_services
 string text_register
+string text_select_country
 string text_setup_bluetooth
 string text_signin_underlined
 string text_state_label
@@ -4335,6 +4358,12 @@ string title_connect_bluetooth_devices
 string title_find_bluetooth_devices
 string title_how_does_ir_communication_work
 string title_ir_communication_advantages
+string title_realtime_mc_Conclusion
+string title_realtime_mc_body
+string title_realtime_mc_body_0
+string title_realtime_mc_body_1
+string title_realtime_mc_body_2
+string title_realtime_mc_intro
 string title_setup_bluetooth
 string title_summary
 string title_transfer_bluetooth_data

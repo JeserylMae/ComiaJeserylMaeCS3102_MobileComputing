@@ -45,6 +45,7 @@ public class HomeActivity extends AppCompatActivity {
         binding.buttonInfraredCommunication.setOnClickListener(this::onOpenIrCommClicked);
         binding.buttonBluetoothTransfer.setOnClickListener(this::onOpenBluetoothFileTransferButtonClicked);
         binding.buttonBluetoothWireless.setOnClickListener(this::onOpenBluetoothWirelessRangeButtonClicked);
+        binding.buttonRealtimeMcServices.setOnClickListener(this::onOpenRealtimeMcServicesButtonClicked);
     }
 
     private void setUsername() {
@@ -105,5 +106,13 @@ public class HomeActivity extends AppCompatActivity {
             BluetoothWirelessRangeActivity.class
         );
         startActivity(BluetoothWR);
+    }
+
+    private void onOpenRealtimeMcServicesButtonClicked(View v) {
+        Intent RealtimeServices = new Intent(
+            HomeActivity.this,
+                RtMcServicesActivity.class
+        );
+        startActivity(RealtimeServices);
     }
 }

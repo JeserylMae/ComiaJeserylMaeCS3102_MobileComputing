@@ -87,7 +87,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:text="@string/text_infrared_communication"
+                    android:text="@string/text_bluetooth_file_transfer"
                     tools:ignore="RtlSymmetry"
                     />
             </androidx.constraintlayout.widget.ConstraintLayout>

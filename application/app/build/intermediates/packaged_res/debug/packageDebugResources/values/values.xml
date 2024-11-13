@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="array_country_dropdown">
+        <item>Bolivia</item>
+        <item>Cambodia</item>
+        <item>China</item>
+        <item>Germany</item>
+        <item>Japan</item>
+        <item>Mexico</item>
+        <item>Philippines</item>
+        <item>South Korea</item>
+        <item>Venezuela</item>
+        <item>Vietnam</item>
+    </string-array>
     <string-array name="array_region_barmm_dropdown">
         <item>Basilan</item>
         <item>Lanao del Sur</item>
@@ -510,7 +522,7 @@
         Because connect() is a blocking call, you should always perform this connection procedure
         in a thread that is separate from the main activity (UI) thread.
     </string>
-    <string name="text_country_flag">Country\'s Flag Identifier</string>
+    <string name="text_country_flag">What\'s The Flag?</string>
     <string name="text_country_label">Country</string>
     <string name="text_country_select">Select Region</string>
     <string name="text_country_value">Philippines</string>
@@ -590,6 +602,7 @@
         duration, up to one hour, by adding the EXTRA_DISCOVERABLE_DURATION extra.
     </string>
     <string name="text_gender_label">Gender</string>
+    <string name="text_get_flag">Get Flag!</string>
     <string name="text_greeting_hello">Hello!</string>
     <string name="text_greeting_hello_1">Hello,</string>
     <string name="text_greeting_welcome">Welcome to Android Lab!</string>
@@ -656,8 +669,125 @@
     <string name="text_owner_name">Created By: Jesay</string>
     <string name="text_password_label">Password</string>
     <string name="text_phone_number_label">Phone Number</string>
+    <string name="text_realtime_mc_body">
+        Real-time mobile services have revolutionized how consumers interact with digital applications,
+        creating a need for robust infrastructure that can handle continuous data flow, maintain low
+        latency, and prioritize security. In this section, we discuss the key components and challenges
+        in building and deploying real-time mobile services, with examples from various sectors that
+        illustrate the diverse applications of these technologies.
+    </string>
+    <string name="text_realtime_mc_body_0">
+        Real-time mobile services rely on a complex network of interconnected technologies,
+        including mobile networks (4G, 5G), cloud computing, edge computing, and APIs for rapid
+        data exchange. Applications such as messaging, gaming, ride-sharing, and financial trading
+        require robust architectures to deliver a consistent, low-latency experience.
+        \n\n
+        1. Mobile Networks:
+        \n
+        With the advent of 5G technology, latency has reduced significantly, enabling faster
+        real-time processing capabilities. This reduction supports applications that need instant
+        feedback, such as augmented reality (AR) games or emergency services, where every
+        millisecond counts.
+        \n\n
+        2. Cloud and Edge Computing:
+        \n
+        Cloud services facilitate centralized data processing, while edge computing brings
+        processing closer to the data source, improving responsiveness. Edge computing, for
+        example, helps offload processing tasks from the cloud, allowing mobile apps to perform
+        operations such as local caching and data filtering.
+        \n\n
+        3. APIs and WebSockets:
+        \n
+        APIs enable communication between different services, while WebSockets provide full-duplex
+        communication channels, which are essential for real-time applications. This allows
+        applications to handle continuous updates, such as in stock trading apps where asset
+        prices change every second.
+    </string>
+    <string name="text_realtime_mc_body_1">
+        Achieving data synchronization across all users and devices in real-time is a core
+        challenge. Real-time services require that all users see the same data simultaneously,
+        such as live location updates in a navigation app or score updates in a sports app.
+        \n\n
+        1. Data Streaming:
+        \n
+        Real-time data streaming services like Apache Kafka and Firebase Realtime Database help
+        manage large amounts of data by streaming it to users instantly. For instance, Uber
+        utilizes data streaming to continuously update driver and rider locations, syncing this
+        data across all users in real time.
+        \n\n
+        2. Conflict Resolution:
+        \n
+        When multiple users interact with shared data, like collaborating on a document,
+        maintaining data consistency is challenging. Conflict resolution strategies, such as
+        last-write-wins or operational transformation, ensure data remains consistent across
+        all user devices.
+    </string>
+    <string name="text_realtime_mc_body_2">
+        Latency – the delay between user action and system response – is a critical consideration
+        in real-time services. High latency can lead to poor user experiences, especially in
+        time-sensitive applications like online gaming or remote surgery.
+        \n\n
+        1. Latency Optimization Techniques:
+        \n
+        Techniques such as load balancing, content delivery networks (CDNs), and caching reduce
+        latency. For example, Netflix utilizes CDNs to cache content near users, minimizing
+        buffering time and improving video streaming quality.
+        \n\n
+        2. Monitoring and Scaling:
+        \n
+        Real-time monitoring of network performance allows for proactive scaling. Dynamic scaling
+        ensures that apps have sufficient resources to maintain performance during high-traffic
+        periods, such as a sudden influx of users during a major event.
+    </string>
+    <string name="text_realtime_mc_body_3">
+        Real-time mobile services continue to shape modern applications, requiring innovative
+        solutions to ensure speed, reliability, and security. Through careful infrastructure
+        planning, data optimization, and robust security practices, companies can harness the
+        power of real-time mobile services to deliver compelling user experiences that meet the
+        demands of today’s digitally connected world.
+    </string>
+    <string name="text_realtime_mc_conclusion">
+        Real-time mobile services have become essential in delivering dynamic, responsive
+        experiences that meet the high expectations of modern users. As shown in this study,
+        the successful deployment of these services depends on a sophisticated mix of technologies,
+        from advanced network infrastructure to cloud and edge computing, enabling applications
+        to process and synchronize vast amounts of data almost instantly.
+        \n\n
+        Achieving real-time responsiveness is not without its challenges. Minimizing latency,
+        maintaining data consistency, and ensuring robust security are ongoing hurdles that
+        developers must address to create seamless user experiences. With the rise of 5G, edge
+        computing, and machine learning, the potential of real-time services will continue to
+        expand, powering innovations in areas such as autonomous vehicles, remote healthcare,
+        and immersive augmented reality.
+        \n\n
+        As companies continue to explore new applications and use cases, the need for real-time
+        mobile services will only grow. For developers and businesses, this translates to an
+        opportunity to leverage these services for competitive advantage, driving user engagement,
+        and offering unprecedented value. The future of mobile technology is real-time,
+        and with continued advancements, the possibilities for creating transformative user
+        experiences are boundless.
+    </string>
+    <string name="text_realtime_mc_intro">
+        In today’s fast-paced digital world, real-time mobile services have become integral to
+        meeting users\' demands for instant access, responsiveness, and connectivity. From
+        ride-sharing apps that connect drivers and passengers within seconds to financial
+        apps that process transactions in real-time, the need for immediate information and
+        services has shaped the expectations of modern consumers. This case study delves into
+        the architecture, challenges, and strategies behind building robust real-time mobile
+        services. We explore how companies leverage technologies such as mobile networks,
+        cloud computing, and real-time data processing to deliver seamless user experiences.
+        \n\n
+        The case focuses on essential aspects of real-time services, including data synchronization,
+        latency reduction, and security measures. By analyzing real-world examples, we gain
+        insights into the methods and tools developers use to achieve high-speed, reliable, and
+        scalable applications. This case study will be particularly useful for mobile service
+        providers, app developers, and technology enthusiasts who seek to understand the dynamics
+        of real-time service delivery on mobile platforms, examining best practices, emerging
+        trends, and future possibilities in this rapidly evolving field.
+    </string>
     <string name="text_realtime_mc_services">Different Realtime Mobile Communicating Services</string>
     <string name="text_register">Register</string>
+    <string name="text_select_country">Select Country</string>
     <string name="text_setup_bluetooth">
         Before your app can communicate over Bluetooth or Bluetooth Low Energy, you need to verify
         that Bluetooth is supported on the device, and if it is, ensure that it is enabled. Note
@@ -806,6 +936,18 @@
     <string name="title_ir_communication_advantages">
         Advantages of IR communication
     </string>
+    <string name="title_realtime_mc_Conclusion"> Conclusion </string>
+    <string name="title_realtime_mc_body">Discussion</string>
+    <string name="title_realtime_mc_body_0">
+        Architecture and Infrastructure of Real-Time Mobile Services
+    </string>
+    <string name="title_realtime_mc_body_1">
+        Data Synchronization and Consistency
+    </string>
+    <string name="title_realtime_mc_body_2">
+        Minimizing Latency
+    </string>
+    <string name="title_realtime_mc_intro"> Introduction: Real-Time Mobile Services </string>
     <string name="title_setup_bluetooth">
         Set Up Bluetooth
     </string>
